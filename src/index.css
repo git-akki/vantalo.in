@@ -9,38 +9,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 9%;
-
-    --primary: 158 100% 42%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 9%;
-
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
-
-    --accent: 158 100% 42%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 158 100% 42%;
-
-    --radius: 0.75rem;
-  }
-
-  .dark {
+    /* Enforcing Dark Mode as Default */
     --background: 0 0% 4%;
     --foreground: 0 0% 98%;
 
@@ -68,6 +37,8 @@
     --border: 0 0% 16%;
     --input: 0 0% 16%;
     --ring: 158 100% 42%;
+
+    --radius: 0.75rem;
   }
 }
 

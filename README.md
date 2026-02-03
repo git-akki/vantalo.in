@@ -1,73 +1,45 @@
-# Welcome to your Lovable project
+# Vantalo - AI-Powered Web & Social Media Agency
 
-## Project info
+This is the official repository for Vantalo, a premier AI-based Web and Social Media Agency. We build modern SaaS-style websites and automate social media growth using cutting-edge AI technology.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Technologies Used
 
-## How can I edit this code?
+- **Vite**: Build tool and development server.
+- **React**: UI library.
+- **TypeScript**: Static typing.
+- **Tailwind CSS**: Utility-first CSS framework.
+- **Framer Motion**: Animations.
+- **Shadcn UI**: Reusable components.
+- **Supabase**: Backend database for form submissions.
+- **Resend**: Email delivery service.
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/git-akki/vantalo.in.git
+    cd vantalo.in
+    ```
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
 
-Changes made via Lovable will be committed automatically to this repo.
+3.  Set up environment variables:
+    - Copy `.env.example` to `.env`.
+    - Fill in your Supabase and Resend credentials.
 
-**Use your preferred IDE**
+4.  Start the development server:
+    ```bash
+    npm run dev
+    ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Deployment
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+This project is optimized for deployment on **Vercel**.
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+1.  Push your code to GitHub.
+2.  Import the project into Vercel.
+3.  Add the environment variables (`SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `RESEND_API_KEY`, `FROM_EMAIL`, `TO_EMAIL`).
+4.  Deploy!

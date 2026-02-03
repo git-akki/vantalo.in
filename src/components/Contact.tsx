@@ -81,9 +81,31 @@ const Contact = () => {
     }
 
     // Mock submission for demonstration
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    setIsSent(true);
-    reset();
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...data,
+          source: 'portfolio-form',
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit form');
+      }
+
+      setIsSent(true);
+      reset();
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setError("root", {
+        type: "manual",
+        message: "Something went wrong. Please try again later.",
+      });
+    }
   };
 
   return (
