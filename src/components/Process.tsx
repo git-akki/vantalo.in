@@ -40,30 +40,30 @@ const Process = () => {
     <section className="py-24 sm:py-32 bg-background relative overflow-hidden">
       <div className="container relative z-10">
         <motion.div
-          variants={staggerContainer as any}
+          variants={staggerContainer as Variants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
           className="text-center mb-12 md:mb-16"
         >
-          <motion.div variants={fadeInUp as any} className="mb-6 flex justify-center">
+          <motion.div variants={fadeInUp as Variants} className="mb-6 flex justify-center">
             <Badge variant="soft" className="uppercase tracking-wider gap-2">
               <Settings className="w-3 h-3" />
               How We Work
             </Badge>
           </motion.div>
           
-          <motion.h2 variants={fadeInUp as any} className="text-4xl sm:text-5xl font-bold mb-6">
+          <motion.h2 variants={fadeInUp as Variants} className="text-4xl sm:text-5xl font-bold mb-6">
             From <span className="text-primary">Strategy</span> to <span className="text-primary">Scale</span>
           </motion.h2>
           
-          <motion.p variants={fadeInUp as any} className="text-muted-foreground text-lg max-w-2xl mx-auto mb-10">
+          <motion.p variants={fadeInUp as Variants} className="text-muted-foreground text-lg max-w-2xl mx-auto mb-10">
             A unified workflow tailored to your specific growth needs.
           </motion.p>
 
           {/* Custom Tabs */}
           <motion.div 
-            variants={fadeInUp as any}
+            variants={fadeInUp as Variants}
             className="inline-flex p-1 bg-secondary/30 backdrop-blur-sm rounded-full border border-border/50"
           >
             {services.map((service) => (
@@ -533,7 +533,15 @@ const getServiceContent = (type: ServiceType) => {
   }
 };
 
-const Card = ({ step, title, description, icon: Icon, children }: any) => (
+interface CardProps {
+  step: string;
+  title: string;
+  description: string;
+  icon?: React.ElementType;
+  children?: React.ReactNode;
+}
+
+const Card = ({ step, title, description, icon: Icon, children }: CardProps) => (
   <motion.div
     className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 hover:border-primary/20 transition-all duration-300 h-full flex flex-col shadow-sm hover:shadow-md"
   >

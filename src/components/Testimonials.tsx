@@ -77,7 +77,7 @@ const TestimonialCard = ({ data, index }: { data: typeof testimonials[0], index:
         visible: {
           ...fadeInUp.visible,
           transition: {
-            ...(fadeInUp.visible.transition as any),
+            ...(fadeInUp.visible.transition as object),
             delay: index * 0.1
           }
         }
