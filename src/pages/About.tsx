@@ -289,7 +289,7 @@ const AboutPage = () => {
                       {/* Image Section - Spans 2 cols */}
                       <div className="lg:col-span-2 relative h-[400px] lg:h-auto min-h-[400px]">
                           <img 
-                              src="/buildwithakash.png" 
+                              src="/akash-yadav.png" 
                               alt="Akash Yadav" 
                               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                           />
