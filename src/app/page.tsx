@@ -1,65 +1,72 @@
-import Image from "next/image";
+import Hero from "@/components/Hero";
+import Brands from "@/components/Brands";
+import Services from "@/components/Services";
+import Process from "@/components/Process";
+import Projects from "@/components/Projects";
+import Testimonials from "@/components/Testimonials";
+import About from "@/components/About";
+import BookCall from "@/components/BookCall";
+import Contact from "@/components/Contact";
+import Articles from "@/components/Articles";
+import BookingTrust from "@/components/BookingTrust";
+import ProjectAudit from "@/components/ProjectAudit";
+import FAQ from "@/components/FAQ";
+import ToolCTA from "@/components/ToolCTA";
+import { createFaqSchema, createBreadcrumbSchema } from "@/lib/schemas";
 
-export default function Home() {
+const homeFaqs = [
+  {
+    question: "What does an AI-powered social media agency do for coaches?",
+    answer:
+      "An AI-powered social media agency like Vantalo uses artificial intelligence to optimize content strategy, automate posting schedules, analyze audience engagement, and create data-driven social media campaigns that grow your coaching brand's reach and revenue organically.",
+  },
+  {
+    question: "How can AI automation help my coaching business?",
+    answer:
+      "AI automation agents handle repetitive tasks like lead qualification, customer support, email follow-ups, and workflow management 24/7. This lets you focus on coaching while the system scales operations without adding headcount.",
+  },
+  {
+    question: "What makes Vantalo different from other digital agencies?",
+    answer:
+      "Vantalo treats social media, web development, and AI automation as a unified growth system rather than separate services. We build interconnected infrastructure specifically for coaches and educators where your social presence drives traffic to a conversion-optimized website, supported by AI agents that automate operations.",
+  },
+  {
+    question: "Do you build websites with AI integration for coaches?",
+    answer:
+      "Yes. We build high-performance websites using Next.js and React, with built-in AI features such as chatbots, lead qualification agents, personalized content, and automated workflows that connect your website to your entire coaching business ecosystem.",
+  },
+];
+
+export default function HomePage() {
+  const faqSchema = createFaqSchema(homeFaqs);
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://vantalo.in" },
+  ]);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <Hero />
+      <Brands />
+      <Services />
+      <Process />
+      <Projects />
+      <Testimonials />
+      <ProjectAudit />
+      <ToolCTA />
+      <Articles />
+      <About />
+      <FAQ />
+      <BookCall />
+      <BookingTrust />
+      <Contact />
+    </>
   );
 }

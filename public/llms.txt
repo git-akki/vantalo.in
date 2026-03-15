@@ -1,0 +1,31 @@
+# Vantalo
+
+> AI-powered agency building unified growth systems for educators and coaches. Services: AI social media management, conversion-focused web development, and AI automation agents. Based in India, serving clients in the USA and Switzerland. Founded by Akash Yadav.
+
+## Core Services
+- [Services Overview](https://vantalo.in/services): All three growth services explained
+- [AI Social Media Management](https://vantalo.in/services/social-media): AI-driven social media strategy, content creation, and community building for coaches and educators
+- [Web Development](https://vantalo.in/services/web-development): Conversion-focused websites built with Next.js and React for coaching businesses and online courses
+- [AI Automation Agents](https://vantalo.in/services/ai-automation): Custom AI agents for lead qualification, workflow automation, and 24/7 business operations
+
+## Industry Pages
+- [For Coaches & Consultants](https://vantalo.in/industries/coaches): Marketing systems designed for coaching businesses
+- [For Educators & Course Creators](https://vantalo.in/industries/educators): Growth infrastructure for online education businesses
+
+## Free Tools
+- [Website Grader](https://vantalo.in/tools/website-grader): Free educator website audit tool — score your site across 5 critical categories in 2 minutes
+
+## Case Studies
+- [Timeline by Harsh](https://vantalo.in/work/timeline-by-harsh): 5M+ views in 3 months with viral short-form strategy
+- [Hair Mastery Social](https://vantalo.in/work/hair-mastery-social): 0 to 48K followers and 1.2M monthly reach through organic growth
+- [Hair Mastery](https://vantalo.in/work/hair-mastery): WordPress LMS with custom instructor economy and automated earnings
+- [Modom Grooming](https://vantalo.in/work/modom-grooming): E-commerce launch with role-based wholesale pricing
+- [Salon Appointment System](https://vantalo.in/work/salon-appointment-system): Automated booking system for service businesses
+- [Order Fulfillment System](https://vantalo.in/work/order-fulfillment-system): End-to-end e-commerce automation
+- [AI Subtitle Translator](https://vantalo.in/work/ai-subtitle-translator): Batch AI translation for course content in 9 languages
+
+## About
+- [About Vantalo](https://vantalo.in/about): Our story, philosophy, and approach to building growth systems
+- [Akash Yadav](https://vantalo.in/about/akash-yadav): Founder & Lead Architect — 2.5+ years building growth systems, 12+ systems delivered
+- [Contact](https://vantalo.in/contact): Book a free strategy call — no pitch, no obligation
+- [FAQ](https://vantalo.in/faq): Common questions about our services, pricing, and process
