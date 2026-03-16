@@ -48,7 +48,7 @@ export default function FounderProfile() {
             className="lg:col-span-2 relative h-[350px] sm:h-[450px] lg:h-auto lg:min-h-[550px]"
           >
             <Image
-              src="/akash-yadav.png"
+              src="/akash-yadav.webp"
               alt="Akash Yadav - Founder & Lead Architect at Vantalo"
               fill
               sizes="(max-width: 1024px) 100vw, 40vw"

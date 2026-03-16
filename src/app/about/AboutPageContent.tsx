@@ -272,7 +272,7 @@ export default function AboutPageContent() {
                 <div className="grid lg:grid-cols-5 gap-0">
                     <div className="lg:col-span-2 relative h-[280px] sm:h-[350px] lg:h-auto lg:min-h-[400px]">
                         <Image
-                            src="/akash-yadav.png"
+                            src="/akash-yadav.webp"
                             alt="Akash Yadav - Founder of Vantalo"
                             fill
                             sizes="(max-width: 1024px) 100vw, 40vw"

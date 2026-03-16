@@ -1,18 +1,20 @@
+import dynamic from "next/dynamic";
 import Hero from "@/components/Hero";
 import Brands from "@/components/Brands";
-import Services from "@/components/Services";
-import Process from "@/components/Process";
-import Projects from "@/components/Projects";
-import Testimonials from "@/components/Testimonials";
-import About from "@/components/About";
-import BookCall from "@/components/BookCall";
-import Contact from "@/components/Contact";
-import Articles from "@/components/Articles";
-import BookingTrust from "@/components/BookingTrust";
-import ProjectAudit from "@/components/ProjectAudit";
-import FAQ from "@/components/FAQ";
-import ToolCTA from "@/components/ToolCTA";
 import { createFaqSchema, createBreadcrumbSchema } from "@/lib/schemas";
+
+const Services = dynamic(() => import("@/components/Services"));
+const Process = dynamic(() => import("@/components/Process"));
+const Projects = dynamic(() => import("@/components/Projects"));
+const Testimonials = dynamic(() => import("@/components/Testimonials"));
+const About = dynamic(() => import("@/components/About"));
+const BookCall = dynamic(() => import("@/components/BookCall"));
+const Contact = dynamic(() => import("@/components/Contact"));
+const Articles = dynamic(() => import("@/components/Articles"));
+const BookingTrust = dynamic(() => import("@/components/BookingTrust"));
+const ProjectAudit = dynamic(() => import("@/components/ProjectAudit"));
+const FAQ = dynamic(() => import("@/components/FAQ"));
+const ToolCTA = dynamic(() => import("@/components/ToolCTA"));
 
 const homeFaqs = [
   {

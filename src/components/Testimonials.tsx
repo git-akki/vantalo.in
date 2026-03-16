@@ -10,7 +10,7 @@ const testimonials = [
   {
     role: "Founder, Hair Mastery",
     name: "Pablo Kuemin",
-    image: "/img/Pablo-KueminXvantalo.jpeg",
+    image: "/img/Pablo-KueminXvantalo.webp",
     content: "Vantalo transformed our digital presence. From a custom e-learning platform to a social strategy that drove 48k+ organic followers, they built the entire ecosystem.",
     likes: "2.4k",
     comments: "142"
@@ -18,7 +18,7 @@ const testimonials = [
   {
     role: "Founder, Modom Grooming",
     name: "Marco Netali",
-    image: "/img/Marco netali x vantalo.jpg",
+    image: "/img/Marco netali x vantalo.webp",
     content: "Our booking automation and website overhaul didn't just look good—it doubled our conversion rate in 30 days. They truly understand the business of grooming.",
     likes: "856",
     comments: "45"
@@ -26,7 +26,7 @@ const testimonials = [
   {
     role: "Co-Founder, Hair Mastery",
     name: "Oliver Rust",
-    image: "/img/oliver-rustxvantalo.jpg",
+    image: "/img/oliver-rustxvantalo.webp",
     content: "The technical execution of our education platform was flawless. They took our complex requirements and built a seamless, premium experience for our students.",
     likes: "1.2k",
     comments: "89"
