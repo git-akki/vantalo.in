@@ -109,7 +109,7 @@ const ProjectCard = ({ project, className }: { project: typeof projects[0], clas
           initial="hidden"
           whileInView="visible"
           variants={fadeInUp as unknown as unknown as Variants}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16"
         >
           <div className="max-w-2xl">
@@ -138,7 +138,7 @@ const ProjectCard = ({ project, className }: { project: typeof projects[0], clas
           variants={staggerContainer as unknown as unknown as Variants}
           initial="initial"
           whileInView="animate"
-          viewport={{ once: false, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.1 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:auto-rows-[400px]"
         >
           {displayProjects.map((project, index) => {

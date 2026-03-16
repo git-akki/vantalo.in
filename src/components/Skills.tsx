@@ -68,7 +68,7 @@ const Skills = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           variants={staggerContainer as unknown as unknown as Variants}
           className="text-center mb-16"
         >
@@ -97,7 +97,7 @@ const Skills = () => {
               key={skillGroup.category}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               variants={staggerContainer as unknown as unknown as Variants}
               custom={index}
               className="bg-card border border-border/50 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow"

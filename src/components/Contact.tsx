@@ -121,7 +121,7 @@ const Contact = () => {
           initial="hidden"
           whileInView="visible"
           variants={staggerContainer as unknown as unknown as Variants}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start"
         >
           {/* Contact Info - Left Column */}

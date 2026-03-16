@@ -3,6 +3,7 @@ const SITE_URL = "https://vantalo.in";
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
+  "@id": `${SITE_URL}/#organization`,
   name: "Vantalo",
   url: SITE_URL,
   logo: `${SITE_URL}/VANTALO_PRIMARY.svg`,
@@ -71,6 +72,7 @@ export const organizationSchema = {
 export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": `${SITE_URL}/#website`,
   name: "Vantalo",
   url: SITE_URL,
   description:

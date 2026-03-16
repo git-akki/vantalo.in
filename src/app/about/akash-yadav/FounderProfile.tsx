@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/utils/animations";
 import { Badge } from "@/components/ui/badge";
@@ -46,10 +47,13 @@ export default function FounderProfile() {
             variants={fadeInUp as unknown as unknown as Variants}
             className="lg:col-span-2 relative h-[350px] sm:h-[450px] lg:h-auto lg:min-h-[550px]"
           >
-            <img
+            <Image
               src="/akash-yadav.png"
               alt="Akash Yadav - Founder & Lead Architect at Vantalo"
-              className="absolute inset-0 w-full h-full object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 40vw"
+              priority
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-card pointer-events-none" />
           </motion.div>
@@ -121,7 +125,7 @@ export default function FounderProfile() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer as unknown as unknown as Variants}
         >
           <motion.h2 variants={fadeInUp as unknown as unknown as Variants} className="text-3xl sm:text-4xl font-bold mb-12 text-center">
@@ -151,7 +155,7 @@ export default function FounderProfile() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer as unknown as unknown as Variants}
           className="max-w-3xl mx-auto text-center"
         >

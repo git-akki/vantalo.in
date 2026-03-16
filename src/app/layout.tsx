@@ -41,14 +41,6 @@ export const metadata: Metadata = {
     title: "Vantalo | AI-Powered Marketing for Coaches & Educators",
     description:
       "We build unified growth systems: AI social media management, conversion-focused web development, and intelligent automation agents for coaches and educators.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Vantalo - AI-Powered Marketing for Coaches & Educators",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -56,7 +48,6 @@ export const metadata: Metadata = {
     title: "Vantalo | AI-Powered Marketing for Coaches & Educators",
     description:
       "AI-powered social media management, web development, and automation agents for coaches and educators.",
-    images: ["/og-image.png"],
   },
   alternates: {
     canonical: "https://vantalo.in",

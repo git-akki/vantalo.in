@@ -17,9 +17,8 @@ const Hero = () => {
           {/* Text Content */}
           <motion.div
             variants={staggerContainer as unknown as unknown as Variants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
+            initial="visible"
+            animate="visible"
             className="text-left"
           >
             {/* Status badge - Minimalist */}
@@ -89,7 +88,7 @@ const Hero = () => {
             variants={fadeInUp as unknown as unknown as Variants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             className="relative h-[350px] sm:h-[450px] lg:h-[600px] flex items-center justify-center"
           >
             {/* Abstract System Visual */}

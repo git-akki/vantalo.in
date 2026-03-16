@@ -86,7 +86,7 @@ const ProjectAudit = () => {
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false }}
+                    viewport={{ once: true }}
                     variants={fadeInUp as unknown as unknown as Variants}
                     className="text-center mb-12 space-y-4">
                     <Badge variant="outline" className="mb-4 py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary">
@@ -106,7 +106,7 @@ const ProjectAudit = () => {
                     variants={fadeInUp as unknown as unknown as Variants}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false }}
+                    viewport={{ once: true }}
                     className="flex justify-center mb-16"
                 >
                     <div className="inline-flex p-1 bg-secondary/30 backdrop-blur-sm rounded-full border border-border/50">

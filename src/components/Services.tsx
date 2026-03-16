@@ -91,7 +91,7 @@ const Services = () => {
           initial="hidden"
           whileInView="visible"
           variants={fadeInUp as unknown as unknown as Variants}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="text-center mb-20 flex flex-col items-center"
         >
           <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary rounded-full mb-6">
@@ -110,7 +110,7 @@ const Services = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer as unknown as unknown as Variants}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
@@ -123,7 +123,7 @@ const Services = () => {
         <motion.div 
            initial="hidden"
            whileInView="visible"
-           viewport={{ once: false, amount: 0.2 }}
+           viewport={{ once: true, amount: 0.2 }}
            variants={fadeInUp as unknown as unknown as Variants}
            className="mt-16 text-center"
         >

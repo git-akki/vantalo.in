@@ -55,7 +55,7 @@ export default function SocialMediaContent() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer as unknown as unknown as Variants}
           className="max-w-3xl"
         >
@@ -84,7 +84,7 @@ export default function SocialMediaContent() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer as unknown as unknown as Variants}
         >
           <motion.h2 variants={fadeInUp as unknown as unknown as Variants} className="text-3xl font-bold mb-12">
@@ -129,7 +129,7 @@ export default function SocialMediaContent() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer as unknown as unknown as Variants}
         >
           <motion.h2 variants={fadeInUp as unknown as unknown as Variants} className="text-3xl font-bold mb-8">
@@ -179,7 +179,7 @@ export default function SocialMediaContent() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer as unknown as unknown as Variants}
           className="max-w-3xl"
         >
@@ -206,7 +206,7 @@ export default function SocialMediaContent() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             variants={staggerContainer as unknown as unknown as Variants}
             className="grid lg:grid-cols-2 gap-12 items-center"
           >
@@ -260,7 +260,7 @@ export default function SocialMediaContent() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer as unknown as unknown as Variants}
         >
           <motion.h2 variants={fadeInUp as unknown as unknown as Variants} className="text-3xl font-bold mb-12">
@@ -288,7 +288,7 @@ export default function SocialMediaContent() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={fadeInUp as unknown as unknown as Variants}
           className="border-t border-border/30 pt-8"
         >

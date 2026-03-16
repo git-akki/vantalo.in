@@ -98,7 +98,7 @@ export default function ServicesPageContent() {
             <motion.div
                initial="hidden"
                whileInView="visible"
-               viewport={{ once: false, amount: 0.2 }}
+               viewport={{ once: true, amount: 0.2 }}
                variants={fadeInUp as unknown as unknown as Variants}
                className="order-2 lg:order-1 relative h-[350px] sm:h-[400px] lg:h-[500px] bg-secondary/5 rounded-3xl border border-border/50 overflow-hidden"
             >
@@ -109,7 +109,7 @@ export default function ServicesPageContent() {
             <motion.div
                initial="hidden"
                whileInView="visible"
-               viewport={{ once: false, amount: 0.2 }}
+               viewport={{ once: true, amount: 0.2 }}
                variants={staggerContainer as unknown as unknown as Variants}
                className="order-1 lg:order-2 space-y-8"
             >
@@ -153,7 +153,7 @@ export default function ServicesPageContent() {
             <motion.div
                initial="hidden"
                whileInView="visible"
-               viewport={{ once: false, amount: 0.2 }}
+               viewport={{ once: true, amount: 0.2 }}
                variants={staggerContainer as unknown as unknown as Variants}
                className="space-y-8"
             >
@@ -192,7 +192,7 @@ export default function ServicesPageContent() {
             <motion.div
                initial="hidden"
                whileInView="visible"
-               viewport={{ once: false, amount: 0.2 }}
+               viewport={{ once: true, amount: 0.2 }}
                variants={fadeInUp as unknown as unknown as Variants}
                className="relative h-[350px] sm:h-[400px] lg:h-[500px] bg-secondary/5 rounded-3xl border border-border/50 overflow-hidden"
             >
@@ -208,7 +208,7 @@ export default function ServicesPageContent() {
             <motion.div
                initial="hidden"
                whileInView="visible"
-               viewport={{ once: false, amount: 0.2 }}
+               viewport={{ once: true, amount: 0.2 }}
                variants={fadeInUp as unknown as unknown as Variants}
                className="order-2 lg:order-1 relative h-[350px] sm:h-[400px] lg:h-[500px] bg-secondary/5 rounded-3xl border border-border/50 overflow-hidden"
             >
@@ -219,7 +219,7 @@ export default function ServicesPageContent() {
             <motion.div
                initial="hidden"
                whileInView="visible"
-               viewport={{ once: false, amount: 0.2 }}
+               viewport={{ once: true, amount: 0.2 }}
                variants={staggerContainer as unknown as unknown as Variants}
                className="order-1 lg:order-2 space-y-8"
             >
@@ -262,7 +262,7 @@ export default function ServicesPageContent() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer as unknown as unknown as Variants}
           className="max-w-3xl mx-auto text-center"
         >

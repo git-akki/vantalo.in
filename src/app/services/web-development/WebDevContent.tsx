@@ -34,7 +34,7 @@ export default function WebDevContent() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer as unknown as unknown as Variants}
           className="max-w-3xl"
         >
@@ -57,7 +57,7 @@ export default function WebDevContent() {
 
       {/* What We Build */}
       <section className="container mb-24">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants}>
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants}>
           <motion.h2 variants={fadeInUp as unknown as unknown as Variants} className="text-3xl font-bold mb-12">What We Build for Coaches</motion.h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -82,7 +82,7 @@ export default function WebDevContent() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer as unknown as unknown as Variants}
           className="max-w-3xl"
         >
@@ -108,7 +108,7 @@ export default function WebDevContent() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer as unknown as unknown as Variants}
           className="max-w-3xl"
         >
@@ -134,7 +134,7 @@ export default function WebDevContent() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer as unknown as unknown as Variants}
         >
           <motion.h2 variants={fadeInUp as unknown as unknown as Variants} className="text-3xl font-bold mb-8">
@@ -179,7 +179,7 @@ export default function WebDevContent() {
       {/* Case Study */}
       <section className="bg-secondary/5 py-24 border-y border-border/50 mb-24">
         <div className="container">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants}>
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants}>
             <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary rounded-full mb-6">Case Study</Badge>
             <motion.h2 variants={fadeInUp as unknown as unknown as Variants} className="text-3xl font-bold mb-4">Hair Mastery: Custom LMS Platform</motion.h2>
             <motion.p variants={fadeInUp as unknown as unknown as Variants} className="text-lg text-muted-foreground leading-relaxed mb-4 max-w-2xl">
@@ -205,7 +205,7 @@ export default function WebDevContent() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={fadeInUp as unknown as unknown as Variants}
           className="border-t border-border/30 pt-8"
         >

@@ -19,7 +19,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             variants={staggerContainer as unknown as unknown as Variants}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             className="flex flex-col justify-center h-full"
           >
             <motion.div variants={fadeInUp as unknown as unknown as Variants} className="mb-6">

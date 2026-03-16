@@ -38,7 +38,7 @@ export default function EducatorsContent() {
 
       {/* Why Do Course Creators Need a Custom Growth System? */}
       <section className="container mb-24">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
           <motion.div variants={fadeInUp as unknown as unknown as Variants}>
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">Why Do Course Creators Need a Custom Growth System?</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
@@ -55,7 +55,7 @@ export default function EducatorsContent() {
       </section>
 
       <section className="container mb-24">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants}>
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants}>
           <motion.h2 variants={fadeInUp as unknown as unknown as Variants} className="text-3xl font-bold mb-12">Built for the Education Business Model</motion.h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -93,7 +93,7 @@ export default function EducatorsContent() {
 
       {/* What Makes Education Businesses Different? */}
       <section className="container mb-24">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
           <motion.div variants={fadeInUp as unknown as unknown as Variants}>
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">What Makes Education Businesses Different?</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
@@ -109,7 +109,7 @@ export default function EducatorsContent() {
       {/* Case Study */}
       <section className="bg-secondary/5 py-24 border-y border-border/50 mb-24">
         <div className="container">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants}>
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants}>
             <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary rounded-full mb-6">Case Study</Badge>
             <motion.h2 variants={fadeInUp as unknown as unknown as Variants} className="text-3xl font-bold mb-4">Hair Mastery: Education Platform + Social Growth</motion.h2>
             <motion.p variants={fadeInUp as unknown as unknown as Variants} className="text-lg text-muted-foreground leading-relaxed mb-4 max-w-2xl">
@@ -141,7 +141,7 @@ export default function EducatorsContent() {
 
       {/* Who Is This For? */}
       <section className="container mb-24">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
           <motion.div variants={fadeInUp as unknown as unknown as Variants}>
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">Who Is This For?</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
@@ -168,7 +168,7 @@ export default function EducatorsContent() {
 
       {/* Educator-Specific FAQ */}
       <section className="container mb-24">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
           <motion.div variants={fadeInUp as unknown as unknown as Variants}>
             <h2 className="text-3xl sm:text-4xl font-bold mb-8">Common Questions from Educators</h2>
             <div className="space-y-8">
@@ -197,7 +197,7 @@ export default function EducatorsContent() {
 
       {/* Citation */}
       <section className="container mb-24">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={fadeInUp as unknown as unknown as Variants} className="max-w-3xl">
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={fadeInUp as unknown as unknown as Variants} className="max-w-3xl">
           <div className="bg-card border border-border/50 rounded-2xl p-6">
             <p className="text-sm text-muted-foreground">
               <strong className="text-foreground">Source:</strong> Research and Markets, <em>Global Online Education Market Report, 2025</em>.{" "}

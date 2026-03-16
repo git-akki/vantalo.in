@@ -37,7 +37,7 @@ const RoiCalculator = () => {
                             initial="hidden"
                             whileInView="visible"
                             variants={fadeInUp as unknown as unknown as Variants}
-                            viewport={{ once: false }}
+                            viewport={{ once: true }}
                             className="space-y-6"
                         >
                             <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
@@ -56,7 +56,7 @@ const RoiCalculator = () => {
                              variants={staggerContainer as unknown as unknown as Variants}
                              initial="hidden"
                              whileInView="visible"
-                             viewport={{ once: false }}
+                             viewport={{ once: true }}
                              className="space-y-8"
                         >
                             {/* Team Size */}
@@ -127,7 +127,7 @@ const RoiCalculator = () => {
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5 }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                         className="lg:pl-8"
                     >
                         <Card className="border-border shadow-sm bg-card rounded-3xl overflow-hidden relative">

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/utils/animations";
 import { Badge } from "@/components/ui/badge";
@@ -106,7 +107,7 @@ export default function AboutPageContent() {
         <motion.div
            initial="hidden"
            whileInView="visible"
-           viewport={{ once: false, amount: 0.2 }}
+           viewport={{ once: true, amount: 0.2 }}
            variants={staggerContainer as unknown as unknown as Variants}
            className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center"
         >
@@ -129,7 +130,7 @@ export default function AboutPageContent() {
                          initial={{ opacity: 0, y: 20, scale: 0.95 }}
                          whileInView={{ opacity: 1, y: 0, scale: 1 }}
                          transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
-                         viewport={{ once: false }}
+                         viewport={{ once: true }}
                          className="bg-background/95 backdrop-blur-md border border-border p-6 rounded-2xl shadow-xl max-w-[260px] relative overflow-hidden"
                        >
                           <motion.div
@@ -186,7 +187,7 @@ export default function AboutPageContent() {
             <motion.div
                initial="hidden"
                whileInView="visible"
-               viewport={{ once: false, amount: 0.2 }}
+               viewport={{ once: true, amount: 0.2 }}
                variants={staggerContainer as unknown as unknown as Variants}
                className="text-center max-w-3xl mx-auto mb-16"
             >
@@ -199,7 +200,7 @@ export default function AboutPageContent() {
             <motion.div
                initial="hidden"
                whileInView="visible"
-               viewport={{ once: false, amount: 0.2 }}
+               viewport={{ once: true, amount: 0.2 }}
                variants={staggerContainer as unknown as unknown as Variants}
                className="grid md:grid-cols-3 gap-8"
             >
@@ -243,7 +244,7 @@ export default function AboutPageContent() {
          <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             variants={staggerContainer as unknown as unknown as Variants}
             className="text-center max-w-3xl mx-auto mb-16"
          >
@@ -262,7 +263,7 @@ export default function AboutPageContent() {
          <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             variants={fadeInUp as unknown as unknown as Variants}
             className="relative"
          >
@@ -270,10 +271,12 @@ export default function AboutPageContent() {
               <div className="group relative bg-card border border-border/50 rounded-3xl overflow-hidden hover:border-primary/30 transition-colors duration-500">
                 <div className="grid lg:grid-cols-5 gap-0">
                     <div className="lg:col-span-2 relative h-[280px] sm:h-[350px] lg:h-auto lg:min-h-[400px]">
-                        <img
+                        <Image
                             src="/akash-yadav.png"
                             alt="Akash Yadav - Founder of Vantalo"
-                            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            fill
+                            sizes="(max-width: 1024px) 100vw, 40vw"
+                            className="object-cover transition-transform duration-700 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-card pointer-events-none" />
                     </div>
@@ -344,7 +347,7 @@ export default function AboutPageContent() {
          <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             variants={staggerContainer as unknown as unknown as Variants}
             className="grid lg:grid-cols-2 gap-12 items-center"
          >

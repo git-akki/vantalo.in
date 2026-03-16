@@ -71,7 +71,7 @@ const FAQ = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer as unknown as unknown as Variants}
           className="text-center mb-12"
         >
@@ -92,7 +92,7 @@ const FAQ = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.1 }}
           variants={fadeInUp as unknown as unknown as Variants}
         >
           {faqs.map((faq, index) => (

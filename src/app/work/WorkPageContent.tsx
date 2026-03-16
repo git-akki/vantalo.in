@@ -142,7 +142,7 @@ export default function WorkPageContent() {
          <motion.div
            initial="hidden"
            whileInView="visible"
-           viewport={{ once: false, amount: 0.1 }}
+           viewport={{ once: true, amount: 0.1 }}
            variants={staggerContainer as unknown as unknown as Variants}
            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[400px]"
          >

@@ -11,7 +11,7 @@ const Footer = () => {
           variants={fadeIn as unknown as unknown as Variants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           className="flex flex-col items-center gap-4"
         >
           <nav className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-sm text-muted-foreground">

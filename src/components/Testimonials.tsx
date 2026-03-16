@@ -1,6 +1,7 @@
 "use client";
 import { motion, Variants, AnimatePresence } from "framer-motion";
 import { Sparkles, X, Quote, Verified, Play, Heart, ArrowRight } from "lucide-react";
+import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 import { smoothTransition, fadeInUp } from "@/utils/animations";
 import { Badge } from "./ui/badge";
@@ -72,7 +73,7 @@ const TestimonialCard = ({ data, index }: { data: typeof testimonials[0], index:
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.2 }}
       variants={{
         hidden: fadeInUp.hidden,
         visible: {
@@ -87,10 +88,12 @@ const TestimonialCard = ({ data, index }: { data: typeof testimonials[0], index:
     >
       {/* Background Image */}
       <div className={`absolute inset-0 transition-all duration-500 ease-out ${showTranscript ? 'opacity-20 blur-md scale-105' : 'opacity-80 group-hover:scale-105'}`}>
-        <img 
-          src={data.image} 
-          alt={data.name} 
-          className="w-full h-full object-cover"
+        <Image
+          src={data.image}
+          alt={data.name}
+          fill
+          sizes="320px"
+          className="object-cover"
         />
       </div>
       

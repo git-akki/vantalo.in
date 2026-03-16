@@ -37,7 +37,7 @@ export default function CoachesContent() {
 
       {/* Why Do Coaches Struggle with Marketing? */}
       <section className="container mb-24">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
           <motion.div variants={fadeInUp as unknown as unknown as Variants}>
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">Why Do Coaches Struggle with Marketing?</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
@@ -55,7 +55,7 @@ export default function CoachesContent() {
 
       {/* Three Services for Coaches */}
       <section className="container mb-24">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="space-y-16">
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="space-y-16">
           {[
             {
               icon: Share2, color: "blue", title: "Social Media That Fills Your Pipeline",
@@ -104,7 +104,7 @@ export default function CoachesContent() {
 
       {/* What Results Have Coaches Achieved with Vantalo? */}
       <section className="container mb-24">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
           <motion.div variants={fadeInUp as unknown as unknown as Variants}>
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">What Results Have Coaches Achieved with Vantalo?</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
@@ -138,7 +138,7 @@ export default function CoachesContent() {
 
       {/* Testimonial */}
       <section className="container mb-24">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl mx-auto text-center">
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl mx-auto text-center">
           <motion.div variants={fadeInUp as unknown as unknown as Variants}>
             <blockquote className="text-xl sm:text-2xl text-foreground font-medium leading-relaxed mb-6">
               &ldquo;Before Vantalo, I was spending more time on marketing than coaching. Now my content runs on a system, my website actually books calls, and the AI handles inquiries while I sleep. I doubled my client base in three months without doubling my workload.&rdquo;
@@ -150,7 +150,7 @@ export default function CoachesContent() {
 
       {/* Who Is This For? */}
       <section className="container mb-24">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
           <motion.div variants={fadeInUp as unknown as unknown as Variants}>
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">Who Is This For?</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
@@ -177,7 +177,7 @@ export default function CoachesContent() {
 
       {/* Coach-Specific FAQ */}
       <section className="container mb-24">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
           <motion.div variants={fadeInUp as unknown as unknown as Variants}>
             <h2 className="text-3xl sm:text-4xl font-bold mb-8">Common Questions from Coaches</h2>
             <div className="space-y-8">
@@ -206,7 +206,7 @@ export default function CoachesContent() {
 
       {/* Citation */}
       <section className="container mb-24">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={fadeInUp as unknown as unknown as Variants} className="max-w-3xl">
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={fadeInUp as unknown as unknown as Variants} className="max-w-3xl">
           <div className="bg-card border border-border/50 rounded-2xl p-6">
             <p className="text-sm text-muted-foreground">
               <strong className="text-foreground">Source:</strong> International Coaching Federation, <em>2023 ICF Global Coaching Study</em>.{" "}

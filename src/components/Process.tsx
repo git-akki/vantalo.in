@@ -44,7 +44,7 @@ const Process = () => {
           variants={staggerContainer as unknown as Variants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="text-center mb-12 md:mb-16"
         >
           <motion.div variants={fadeInUp as unknown as Variants} className="mb-6 flex justify-center">
