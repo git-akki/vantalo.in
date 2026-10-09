@@ -11,11 +11,10 @@ import { ProjectVisual } from "./ProjectVisual";
 import { cn } from "@/lib/utils";
 
 const fadeInNoSlide: Variants = {
-  hidden: { opacity: 0, filter: "blur(10px)" },
+  hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    filter: "blur(0px)",
-    transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] },
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
   },
 };
 
@@ -24,13 +23,13 @@ const ProjectCard = ({ project, className }: { project: typeof projects[0], clas
     <Link href={`/project/${project.slug}`} className={cn("block h-full", className)}>
       <motion.div
         variants={fadeInNoSlide}
-        className="group relative bg-card border border-border/50 rounded-3xl overflow-hidden h-[400px] lg:h-full flex flex-col transition-all duration-500 hover:shadow-2xl hover:border-primary/20"
+        className="group relative bg-card border border-border/50 rounded-3xl overflow-hidden h-[400px] lg:h-full flex flex-col transition-all duration-500 hover:shadow-[0_24px_48px_-24px_hsl(45_14%_7%/0.25)] hover:border-primary/30"
       >
         {/* Background Visuals / Animation */}
         <div className="absolute inset-0 z-0 bg-secondary/5">
           <ProjectVisual project={project} />
           {/* Gradient overlay for text readability - lighter to keep visuals visible */}
-          <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/40 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 via-35% to-transparent pointer-events-none" />
         </div>
 
         {/* Content Container - Visual First Layout */}
@@ -38,14 +37,14 @@ const ProjectCard = ({ project, className }: { project: typeof projects[0], clas
           
           {/* Top Header - Minimal */}
           <div className="flex justify-end items-start">
-            <div className="rounded-full bg-background/20 backdrop-blur-md border border-white/10 p-3 text-foreground/80 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1 group-hover:translate-x-1">
+            <div className="rounded-full bg-card/80 backdrop-blur-md border border-border p-3 text-foreground/80 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1 group-hover:translate-x-1">
               <ArrowUpRight className="w-5 h-5" />
             </div>
           </div>
 
           {/* Bottom Content - Clean & Minimal */}
           <div className="flex flex-col gap-3 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-            <Badge variant="outline" className="w-fit bg-background/40 backdrop-blur-md border-white/10 text-xs font-medium tracking-wide">
+            <Badge variant="outline" className="w-fit bg-card/80 backdrop-blur-md border-border text-xs font-medium tracking-wide">
               {project.category}
             </Badge>
             
@@ -103,7 +102,7 @@ const ProjectCard = ({ project, className }: { project: typeof projects[0], clas
     : [social1, web1, social2, web2].filter(Boolean) as typeof projects;
 
   return (
-    <section id="projects" className="py-24 sm:py-32">
+    <section id="projects" className="section-y">
       <div className="container px-6">
         <motion.div
           initial="hidden"

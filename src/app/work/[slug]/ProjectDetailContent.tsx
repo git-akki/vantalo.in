@@ -104,7 +104,7 @@ export default function ProjectDetailContent({ slug }: { slug: string }) {
               <h3 className="text-2xl font-bold mb-4 text-foreground">
                 The Challenge
               </h3>
-              <div className="prose prose-lg dark:prose-invert text-muted-foreground leading-relaxed">
+              <div className="prose prose-lg text-muted-foreground leading-relaxed">
                 {project.problem ? (
                   project.problem.split("\n\n").map((paragraph, index) => (
                     <p key={index} className="mb-4">{paragraph}</p>
@@ -125,7 +125,7 @@ export default function ProjectDetailContent({ slug }: { slug: string }) {
               <h3 className="text-2xl font-bold mb-4 text-foreground">
                 The Solution
               </h3>
-              <div className="prose prose-lg dark:prose-invert text-muted-foreground leading-relaxed mb-6">
+              <div className="prose prose-lg text-muted-foreground leading-relaxed mb-6">
                 {project.solution ? (
                   project.solution.split("\n\n").map((paragraph, index) => (
                     <p key={index} className="mb-4">{paragraph}</p>

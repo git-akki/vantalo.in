@@ -110,7 +110,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 sm:py-32 relative overflow-hidden bg-background">
+    <section id="contact" className="section-y relative overflow-hidden bg-background">
       {/* Refined Background Elements */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.02]">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:32px_32px]" />

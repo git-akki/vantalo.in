@@ -27,7 +27,7 @@ const RoiCalculator = () => {
     };
 
     return (
-        <section className="py-24 sm:py-32 relative overflow-hidden bg-background">
+        <section className="section-y relative overflow-hidden bg-background">
             <div className="container relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
                     

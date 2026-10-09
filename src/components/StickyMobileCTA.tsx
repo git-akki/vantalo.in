@@ -29,7 +29,7 @@ const StickyMobileCTA = () => {
             observer.observe(footer);
         }
 
-        window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", handleScroll, { passive: true });
         return () => {
             window.removeEventListener("scroll", handleScroll);
             if (footer) observer.unobserve(footer);
@@ -47,8 +47,9 @@ const StickyMobileCTA = () => {
                         exit={{ scale: 0, opacity: 0 }}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
+                        aria-label="Book a call"
                         onClick={() => router.push("/contact")}
-                        className="fixed bottom-6 right-6 z-50 md:hidden flex items-center justify-center w-14 h-14 bg-primary text-primary-foreground rounded-full shadow-lg shadow-primary/25"
+                        className="fixed bottom-6 right-6 z-50 md:hidden flex items-center justify-center w-14 h-14 bg-primary text-primary-foreground rounded-full shadow-[0_12px_24px_-10px_hsl(var(--primary)/0.55)]"
                     >
                         <Calendar className="w-6 h-6" />
                     </motion.button>
@@ -61,7 +62,7 @@ const StickyMobileCTA = () => {
                         transition={{ duration: 0.3 }}
                         className="fixed bottom-6 left-4 right-4 z-50 md:hidden"
                     >
-                        <div className="flex items-center justify-between p-2 pl-5 bg-card/90 backdrop-blur-lg border border-primary/20 rounded-full shadow-xl shadow-primary/10">
+                        <div className="flex items-center justify-between p-2 pl-5 bg-card/95 backdrop-blur-lg border border-border rounded-full shadow-[0_16px_40px_-16px_hsl(45_14%_7%/0.35)]">
                             <div className="flex flex-col">
                                 <span className="text-sm font-bold text-foreground">
                                     Let's build this.

@@ -7,11 +7,10 @@ import { SocialVisual, WebsiteVisual, AiVisual } from "./ServiceVisuals";
 import Link from "next/link";
 
 const fadeInNoSlide: Variants = {
-  hidden: { opacity: 0, filter: "blur(10px)" },
+  hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    filter: "blur(0px)",
-    transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] },
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
   },
 };
 
@@ -82,7 +81,7 @@ function ServiceCard({ service }: { service: typeof services[0] }) {
 
 const Services = () => {
   return (
-    <section id="services" className="py-24 sm:py-32 relative overflow-hidden">
+    <section id="services" className="section-y relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-border/50 to-transparent" />
       

@@ -74,7 +74,7 @@ const ProjectAudit = () => {
     };
 
     return (
-        <section className="py-24 bg-background relative overflow-hidden">
+        <section className="section-y bg-background relative overflow-hidden">
             {/* Background Micro-elements */}
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
@@ -137,7 +137,7 @@ const ProjectAudit = () => {
 
                 <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start max-w-6xl mx-auto">
                     {/* Column 1: Input Parameters (Checklist) */}
-                    <div className="order-2 lg:order-1">
+                    <div>
                         <div className="mb-6 flex items-center justify-between">
                              <h3 className="text-xl font-semibold flex items-center gap-2">
                                 <span className="flex items-center justify-center w-6 h-6 rounded-full bg-secondary text-xs font-mono text-muted-foreground">1</span>
@@ -166,7 +166,7 @@ const ProjectAudit = () => {
                                         aria-checked={!!checkedItems[index]}
                                         onClick={() => toggleItem(index)}
                                         className={`w-full text-left flex items-start gap-4 p-5 rounded-xl border cursor-pointer transition-[background-color,border-color,box-shadow,transform] duration-200 group relative overflow-hidden ${checkedItems[index]
-                                            ? "bg-primary/5 border-primary/50 shadow-[0_0_20px_rgba(var(--primary),0.1)] sm:translate-x-2"
+                                            ? "bg-primary/5 border-primary/50 shadow-[0_8px_24px_-12px_hsl(var(--primary)/0.35)] sm:translate-x-2"
                                             : "bg-card border-border hover:border-primary/30 hover:bg-secondary/20 sm:hover:translate-x-1"
                                             }`}
                                     >
@@ -200,7 +200,7 @@ const ProjectAudit = () => {
                     </div>
 
                     {/* Column 2: Diagnostic Output (Score) */}
-                    <div className="order-1 lg:order-2 lg:sticky lg:top-24">
+                    <div className="lg:sticky lg:top-24">
                          <div className="mb-6 flex items-center justify-between">
                              <h3 className="text-xl font-semibold flex items-center gap-2">
                                 <span className="flex items-center justify-center w-6 h-6 rounded-full bg-secondary text-xs font-mono text-muted-foreground">2</span>

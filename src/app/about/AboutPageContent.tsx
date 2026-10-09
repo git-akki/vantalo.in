@@ -151,8 +151,9 @@ export default function AboutPageContent() {
                              <motion.div
                                initial={{ width: 0 }}
                                whileInView={{ width: "100%" }}
+              viewport={{ once: true, amount: 0.2 }}
                                transition={{ duration: 1.5, ease: "circOut", delay: 1 }}
-                               className="h-full bg-primary shadow-[0_0_10px_rgba(var(--primary),0.5)]"
+                               className="h-full bg-primary shadow-[0_0_10px_hsl(var(--brand)/0.5)]"
                              />
                           </div>
                        </motion.div>
@@ -413,6 +414,7 @@ export default function AboutPageContent() {
                                  <motion.div
                                    initial={{ width: 0 }}
                                    whileInView={{ width: "100%" }}
+              viewport={{ once: true, amount: 0.2 }}
                                    transition={{ duration: 1, delay: i * 0.2, ease: "easeOut" }}
                                    className="h-full bg-primary"
                                  />

@@ -272,7 +272,7 @@ const AnalyzingScreen = ({ onComplete }: { onComplete: () => void }) => {
   }, [currentStep, onComplete]);
 
   return (
-    <section className="py-24 sm:py-32 relative overflow-hidden min-h-screen flex items-center">
+    <section className="section-y relative overflow-hidden min-h-screen flex items-center">
       <GridBackground />
 
       <div className="container relative z-10 max-w-2xl">
@@ -457,7 +457,7 @@ const WebsiteGrader = () => {
   // ─── SCREEN: Niche Selection ────────────────────────────
   if (screen === "niche") {
     return (
-      <section className="py-24 sm:py-32 relative overflow-hidden min-h-screen flex items-center">
+      <section className="section-y relative overflow-hidden min-h-screen flex items-center">
         <GridBackground />
 
         <div className="container relative z-10 max-w-4xl">
@@ -537,7 +537,7 @@ const WebsiteGrader = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-primary/10 transition-all duration-500" />
 
                 <div className="relative z-10">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(var(--primary),0.3)] transition-all duration-300">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:scale-110 group-hover:shadow-[0_0_20px_hsl(var(--brand)/0.3)] transition-all duration-300">
                     <niche.icon className="w-6 h-6" />
                   </div>
                   <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">{niche.label}</h3>
@@ -572,7 +572,7 @@ const WebsiteGrader = () => {
   // ─── SCREEN: Results ────────────────────────────────────
   if (screen === "results") {
     return (
-      <section className="py-24 sm:py-32 relative overflow-hidden">
+      <section className="section-y relative overflow-hidden">
         <GridBackground />
 
         <div className="container relative z-10 max-w-5xl">
@@ -783,7 +783,7 @@ const WebsiteGrader = () => {
 
   // ─── SCREEN: Audit Checklist ────────────────────────────
   return (
-    <section className="py-24 sm:py-32 relative overflow-hidden">
+    <section className="section-y relative overflow-hidden">
       <GridBackground />
 
       <div className="container relative z-10 max-w-6xl">
@@ -927,7 +927,7 @@ const WebsiteGrader = () => {
 
                                 <div className={`shrink-0 w-5 h-5 mt-0.5 rounded border flex items-center justify-center transition-all duration-200 ${
                                   isChecked
-                                    ? "bg-primary border-primary shadow-[0_0_8px_rgba(var(--primary),0.3)]"
+                                    ? "bg-primary border-primary shadow-[0_0_8px_hsl(var(--brand)/0.3)]"
                                     : "border-muted-foreground/30 group-hover:border-primary/50"
                                 }`}>
                                   {isChecked && (

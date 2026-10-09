@@ -1,14 +1,16 @@
+// Exponential ease-out: fast start, long soft landing.
 export const smoothTransition = {
-    duration: 0.8,
-    ease: [0.25, 0.1, 0.25, 1.0], // Premium smooth easing
+    duration: 0.6,
+    ease: [0.22, 1, 0.36, 1],
 };
 
+// Short travel and no filter blur: blur on whole sections is expensive to
+// paint and made long pages stutter while scrolling.
 export const fadeInUp = {
-    hidden: { opacity: 0, y: 40, filter: "blur(10px)" },
+    hidden: { opacity: 0, y: 16 },
     visible: {
         opacity: 1,
         y: 0,
-        filter: "blur(0px)",
         transition: smoothTransition,
     },
 };
@@ -26,8 +28,8 @@ export const staggerContainer = {
     visible: {
         opacity: 1,
         transition: {
-            staggerChildren: 0.15,
-            delayChildren: 0.1,
+            staggerChildren: 0.08,
+            delayChildren: 0.05,
         },
     },
 };

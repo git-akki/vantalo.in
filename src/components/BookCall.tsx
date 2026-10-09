@@ -15,7 +15,7 @@ const BookCall = () => {
   };
 
   return (
-    <section id="book-call" className="py-24 sm:py-32 relative overflow-hidden">
+    <section id="book-call" className="section-y relative overflow-hidden">
       {/* Minimal background pattern to match other sections */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.03]">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:32px_32px]" />

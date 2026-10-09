@@ -66,7 +66,7 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
 
 const FAQ = () => {
   return (
-    <section className="py-24 border-t border-border/30">
+    <section className="section-y border-t border-border/30">
       <div className="container max-w-3xl">
         <motion.div
           initial="hidden"

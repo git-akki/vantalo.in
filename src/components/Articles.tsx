@@ -34,7 +34,7 @@ const articles = [
 
 const Articles = () => {
   return (
-    <section id="articles" className="py-24 sm:py-32">
+    <section id="articles" className="section-y">
       <div className="container">
         <motion.div
           initial="hidden"

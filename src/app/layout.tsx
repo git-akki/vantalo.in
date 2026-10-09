@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
+import MotionProvider from "@/components/MotionProvider";
 import { organizationSchema, websiteSchema } from "@/lib/schemas";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -65,13 +66,18 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  themeColor: "#FAF8F5",
+  colorScheme: "light",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <head>
         {/* Google Tag Manager - deferred to not block rendering */}
         <script
@@ -108,12 +114,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
         </noscript>
         {/* End Google Tag Manager (noscript) */}
-        <div className="min-h-screen bg-background text-foreground">
-          <Navbar />
-          <main className="pt-16">{children}</main>
-          <StickyMobileCTA />
-          <Footer />
-        </div>
+        <MotionProvider>
+          <div className="min-h-screen bg-background text-foreground">
+            <Navbar />
+            <main className="pt-16">{children}</main>
+            <StickyMobileCTA />
+            <Footer />
+          </div>
+        </MotionProvider>
         <SpeedInsights />
       </body>
     </html>

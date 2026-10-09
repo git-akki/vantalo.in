@@ -59,7 +59,7 @@ function ModomSwissLogo() {
 
 const Brands = () => {
   return (
-    <section className="py-10 border-y border-border/40 bg-card/30 overflow-hidden">
+    <section className="py-10 sm:py-12 border-y border-border/60 bg-card/60 overflow-hidden">
       <div className="container">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="text-center md:text-left md:max-w-xs shrink-0">
@@ -89,7 +89,7 @@ const Brands = () => {
               {[...brands, ...brands, ...brands, ...brands].map((brand, index) => (
                 <div
                   key={index}
-                  className="text-muted-foreground/40 hover:text-primary transition-all duration-300 cursor-pointer opacity-70 hover:opacity-100 grayscale hover:grayscale-0"
+                  className="text-foreground/45 hover:text-foreground transition-colors duration-300"
                   title={brand.name}
                 >
                   {brand.logo}

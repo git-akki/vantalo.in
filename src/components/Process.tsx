@@ -38,7 +38,7 @@ const Process = () => {
   ];
 
   return (
-    <section className="py-24 sm:py-32 bg-background relative overflow-hidden">
+    <section className="section-y bg-background relative overflow-hidden">
       <div className="container relative z-10">
         <motion.div
           variants={staggerContainer as unknown as Variants}
@@ -96,9 +96,9 @@ const Process = () => {
           <AnimatePresence mode="wait">
             <motion.div
               key={activeTab}
-              initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
-              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-              exit={{ opacity: 0, y: -20, filter: "blur(10px)" }}
+              initial={{ opacity: 0, y: 20, }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20, }}
               transition={{ duration: 0.3 }}
               className="grid grid-cols-1 md:grid-cols-2 gap-6"
             >
@@ -137,7 +137,7 @@ const getServiceContent = (type: ServiceType) => {
                     transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
                     className="absolute inset-0"
                   >
-                    <div className="absolute top-0 left-1/2 w-1.5 h-1.5 bg-primary rounded-full -translate-x-1/2 -translate-y-1/2 shadow-[0_0_10px_rgba(34,197,94,0.8)]" />
+                    <div className="absolute top-0 left-1/2 w-1.5 h-1.5 bg-primary rounded-full -translate-x-1/2 -translate-y-1/2 shadow-[0_0_10px_hsl(var(--brand)/0.8)]" />
                   </motion.div>
                   <div className="absolute inset-0 flex items-center justify-center flex-col gap-1">
                     <span className="text-xs font-bold text-primary tracking-widest">SIGNAL</span>
@@ -171,6 +171,7 @@ const getServiceContent = (type: ServiceType) => {
                <motion.div 
                   initial={{ width: 0 }}
                   whileInView={{ width: "100%" }}
+              viewport={{ once: true, amount: 0.2 }}
                   transition={{ duration: 2, repeat: Infinity }}
                   className="h-px bg-primary/30 mt-4"
                />
@@ -188,10 +189,11 @@ const getServiceContent = (type: ServiceType) => {
               <div className="w-full max-w-[200px] space-y-2">
                  {/* Timeline Tracks */}
                  {[1, 2, 3].map((i) => (
-                   <div key={i} className="h-1.5 bg-secondary rounded-full overflow-hidden relative">
+                   <div key={i} className="h-1.5 bg-foreground/10 rounded-full overflow-hidden relative">
                      <motion.div 
                        initial={{ x: "-100%" }}
                        whileInView={{ x: "100%" }}
+              viewport={{ once: true, amount: 0.2 }}
                        transition={{ duration: 2, delay: i * 0.2, repeat: Infinity, ease: "linear" }}
                        className="absolute inset-0 bg-primary/20"
                      />
@@ -222,8 +224,9 @@ const getServiceContent = (type: ServiceType) => {
                     <motion.div 
                       initial={{ height: 0 }}
                       whileInView={{ height: `${h}%` }}
-                      transition={{ duration: 1, delay: i * 0.1 }}
-                      className={`w-full rounded-sm ${i === 5 ? 'bg-primary' : 'bg-secondary'}`}
+                      viewport={{ once: true, amount: 0.2 }}
+                      transition={{ duration: 0.9, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
+                      className={`w-full rounded-sm ${i === 5 ? 'bg-primary' : 'bg-foreground/[0.07]'}`}
                     />
                   </div>
                 ))}
@@ -358,6 +361,7 @@ const getServiceContent = (type: ServiceType) => {
                         cx="48" cy="48" r="38" 
                         initial={{ pathLength: 0 }}
                         whileInView={{ pathLength: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 1.5, ease: "easeOut" }}
                         className="stroke-primary fill-none stroke-[6] drop-shadow-sm"
                         strokeLinecap="round"
@@ -432,12 +436,14 @@ const getServiceContent = (type: ServiceType) => {
                       <motion.div 
                         initial={{ width: 0 }}
                         whileInView={{ width: "80%" }}
+              viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 1 }}
                         className="h-1.5 bg-primary/20 rounded-full"
                       />
                       <motion.div 
                         initial={{ width: 0 }}
                         whileInView={{ width: "60%" }}
+              viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 1, delay: 0.2 }}
                         className="h-1.5 bg-primary/20 rounded-full"
                       />
@@ -508,6 +514,7 @@ const getServiceContent = (type: ServiceType) => {
                       <motion.div 
                         initial={{ width: "100%" }}
                         whileInView={{ width: "1%" }}
+              viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 1.5, delay: 0.5 }}
                         className="h-full bg-muted-foreground/50"
                       />
@@ -523,6 +530,7 @@ const getServiceContent = (type: ServiceType) => {
                       <motion.div 
                         initial={{ width: "10%" }}
                         whileInView={{ width: "100%" }}
+              viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 1.5, delay: 0.5 }}
                         className="h-full bg-primary"
                       />

@@ -6,7 +6,7 @@ import { Badge } from "./ui/badge";
 
 const About = () => {
   return (
-    <section id="about" className="py-24 sm:py-32 relative overflow-hidden">
+    <section id="about" className="section-y relative overflow-hidden">
       {/* Tech Background Grid */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.03]">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:32px_32px]" />
@@ -46,7 +46,7 @@ const About = () => {
                 whileHover={{ x: 5 }}
                 className="group flex items-center gap-5 p-4 rounded-2xl border border-transparent hover:border-primary/10 hover:bg-secondary/30 transition-colors duration-300"
               >
-                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-[0_0_20px_rgba(var(--primary),0.2)]">
+                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-[0_8px_20px_-8px_hsl(var(--primary)/0.4)]">
                   <Cpu className="w-7 h-7 group-hover:rotate-12 transition-transform duration-500" />
                 </div>
                 <div>
@@ -63,7 +63,7 @@ const About = () => {
                 whileHover={{ x: 5 }}
                 className="group flex items-center gap-5 p-4 rounded-2xl border border-transparent hover:border-primary/10 hover:bg-secondary/30 transition-colors duration-300"
               >
-                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-[0_0_20px_rgba(var(--primary),0.2)]">
+                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-[0_8px_20px_-8px_hsl(var(--primary)/0.4)]">
                   <Target className="w-7 h-7 group-hover:rotate-12 transition-transform duration-500" />
                 </div>
                 <div>
@@ -80,7 +80,7 @@ const About = () => {
                 whileHover={{ x: 5 }}
                 className="group flex items-center gap-5 p-4 rounded-2xl border border-transparent hover:border-primary/10 hover:bg-secondary/30 transition-colors duration-300"
               >
-                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-[0_0_20px_rgba(var(--primary),0.2)]">
+                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-[0_8px_20px_-8px_hsl(var(--primary)/0.4)]">
                   <MonitorSmartphone className="w-7 h-7 group-hover:rotate-12 transition-transform duration-500" />
                 </div>
                 <div>
@@ -97,8 +97,9 @@ const About = () => {
            <motion.div
               initial="hidden"
               whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
               variants={fadeInUp as unknown as unknown as Variants}
-              className="relative h-[350px] sm:h-[450px] lg:h-[600px] w-full flex items-center justify-center lg:translate-x-10"
+              className="relative hidden lg:flex h-[600px] w-full items-center justify-center lg:translate-x-10"
             >
               {/* Background decorative elements to fill space */}
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-secondary/5 rounded-full blur-3xl opacity-30" />
@@ -112,7 +113,7 @@ const About = () => {
                 
                 {/* Status Indicator */}
                 <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 mb-4">
-                  <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse shadow-[0_0_8px_hsl(var(--brand)/0.6)]" />
                   <span className="text-[10px] font-semibold text-primary tracking-wider">GROWTH OS</span>
                 </div>
                 

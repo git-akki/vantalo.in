@@ -3,34 +3,41 @@
 @tailwind utilities;
 
 @layer base {
+  /* Light theme: warm ivory paper, near-black ink, deep brand green for
+     text and buttons. --brand is the vivid #00D688 for decoration only
+     (dots, bars, glows); it fails contrast as text on ivory. */
   :root {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 98%;
+    color-scheme: light;
 
-    --card: 0 0% 7%;
-    --card-foreground: 0 0% 98%;
+    --background: 40 33% 97%;
+    --foreground: 45 14% 7%;
 
-    --popover: 0 0% 7%;
-    --popover-foreground: 0 0% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 45 14% 7%;
 
-    --primary: 158 100% 42%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 45 14% 7%;
+
+    --primary: 158 100% 25%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 0% 98%;
+    --brand: 158 100% 42%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 64%;
+    --secondary: 40 24% 93%;
+    --secondary-foreground: 45 14% 7%;
 
-    --accent: 158 100% 42%;
+    --muted: 40 20% 92%;
+    --muted-foreground: 40 6% 40%;
+
+    --accent: 158 100% 25%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 16%;
-    --input: 0 0% 16%;
-    --ring: 158 100% 42%;
+    --border: 40 18% 87%;
+    --input: 40 18% 84%;
+    --ring: 158 100% 25%;
 
     --radius: 0.75rem;
   }
@@ -39,6 +46,10 @@
 @layer base {
   * {
     border-color: hsl(var(--border));
+  }
+
+  html {
+    scrollbar-color: hsl(var(--foreground) / 0.25) transparent;
   }
 
   body {
@@ -50,21 +61,57 @@
   }
 
   ::selection {
-    background-color: hsl(var(--primary) / 0.3);
+    background-color: hsl(var(--brand) / 0.28);
     color: hsl(var(--foreground));
+  }
+
+  input,
+  textarea {
+    caret-color: hsl(var(--primary));
+  }
+
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  a {
+    text-underline-offset: 0.2em;
+  }
+
+  /* Respect the OS setting: keep state changes, drop ambient motion. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+    }
+
+    .animate-pulse,
+    .animate-spin,
+    .animate-ping,
+    .animate-bounce {
+      animation: none !important;
+    }
   }
 }
 
 @layer components {
+  /* One vertical rhythm for every full-height homepage section. */
+  .section-y {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
   .gradient-text {
-    background-image: linear-gradient(to right, hsl(var(--foreground)), hsl(var(--foreground)), hsl(var(--muted-foreground)));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: hsl(var(--muted-foreground));
   }
 
   .glow {
-    box-shadow: 0 0 40px -10px hsl(var(--primary) / 0.3);
+    box-shadow:
+      0 1px 2px hsl(45 14% 7% / 0.06),
+      0 12px 32px -12px hsl(158 100% 25% / 0.28);
   }
 
   .text-balance {

@@ -140,7 +140,7 @@ export const AiVisual = () => {
        {/* Central Node */}
        <div className="relative z-10">
           <motion.div 
-             animate={{ boxShadow: ["0 0 0 0px rgba(var(--primary), 0)", "0 0 0 20px rgba(var(--primary), 0.1)", "0 0 0 40px rgba(var(--primary), 0)"] }}
+             animate={{ boxShadow: ["0 0 0 0px hsl(var(--primary) / 0)", "0 0 0 20px hsl(var(--primary) / 0.1)", "0 0 0 40px hsl(var(--primary) / 0)"] }}
              transition={{ duration: 2, repeat: Infinity }}
              className="w-16 h-16 bg-card border border-border rounded-2xl flex items-center justify-center shadow-lg relative"
           >

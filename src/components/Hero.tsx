@@ -8,9 +8,9 @@ import { Badge } from "./ui/badge";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden pt-20 pb-16 lg:pt-0 lg:pb-0">
+    <section className="relative lg:min-h-[calc(100svh-4rem)] flex items-center overflow-hidden pt-12 pb-16 lg:py-20">
       {/* Organic background glow */}
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[800px] h-[800px] bg-brand/10 rounded-full blur-3xl pointer-events-none" />
       
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">

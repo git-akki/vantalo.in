@@ -1,6 +1,6 @@
 "use client";
 import { motion, Variants, AnimatePresence } from "framer-motion";
-import { Sparkles, X, Quote, Verified, Play, Heart, ArrowRight } from "lucide-react";
+import { Sparkles, X, Quote, Verified, Play, Heart, ArrowRight, Rocket } from "lucide-react";
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 import { smoothTransition, fadeInUp } from "@/utils/animations";
@@ -34,7 +34,7 @@ const testimonials = [
   {
     role: "Creator, Timeline",
     name: "Harsh",
-    image: "/img/indian-boy-24.jpg",
+    image: "",
     content: "I didn't just get a website, I got a brand. The viral strategy actually works. 5M views in 3 months.",
     likes: "12k",
     comments: "890"
@@ -61,7 +61,7 @@ const TypewriterText = ({ text }: { text: string }) => {
   return (
     <p className="text-white/90 text-sm leading-relaxed font-medium font-mono">
       {displayedText}
-      <span className="inline-block w-1.5 h-4 ml-1 bg-primary animate-pulse align-middle" />
+      <span className="inline-block w-1.5 h-4 ml-1 bg-brand animate-pulse align-middle" />
     </p>
   );
 };
@@ -88,13 +88,22 @@ const TestimonialCard = ({ data, index }: { data: typeof testimonials[0], index:
     >
       {/* Background Image */}
       <div className={`absolute inset-0 transition-all duration-500 ease-out ${showTranscript ? 'opacity-20 blur-md scale-105' : 'opacity-80 group-hover:scale-105'}`}>
-        <Image
-          src={data.image}
-          alt={data.name}
-          fill
-          sizes="320px"
-          className="object-cover"
-        />
+        {data.image ? (
+          <Image
+            src={data.image}
+            alt={data.name}
+            fill
+            sizes="320px"
+            className="object-cover"
+          />
+        ) : (
+          // No photo on file: show a monogram instead of a broken image.
+          <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(circle_at_30%_20%,hsl(var(--brand)/0.35),transparent_60%),linear-gradient(160deg,hsl(158_60%_14%),hsl(45_14%_7%))]">
+            <span className="text-[9rem] font-bold leading-none tracking-tighter text-white/15 select-none">
+              {data.name[0]}
+            </span>
+          </div>
+        )}
       </div>
       
       {/* Gradient Overlay */}
@@ -105,6 +114,9 @@ const TestimonialCard = ({ data, index }: { data: typeof testimonials[0], index:
         <div className="flex-1" />
 
         <button 
+            type="button"
+            aria-label={showTranscript ? `Close ${data.name}'s review` : `Read ${data.name}'s review`}
+            aria-pressed={showTranscript}
             onClick={() => setShowTranscript(!showTranscript)}
             className={`w-10 h-10 rounded-full backdrop-blur-md border flex items-center justify-center transition-all duration-300 ${
                 showTranscript 
@@ -115,7 +127,7 @@ const TestimonialCard = ({ data, index }: { data: typeof testimonials[0], index:
             {showTranscript ? (
                 <X className="w-4 h-4 text-white" />
             ) : (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-primary">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-brand">
                     <path d="M4 8H12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
                     <path d="M4 16H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
                     <circle cx="18" cy="8" r="3" stroke="currentColor" strokeWidth="2"/>
@@ -152,7 +164,7 @@ const TestimonialCard = ({ data, index }: { data: typeof testimonials[0], index:
                         <div>
                             <div className="flex items-center gap-1.5">
                                 <p className="text-white text-sm font-bold">{data.name}</p>
-                                <Verified className="w-3 h-3 text-primary" />
+                                <Verified className="w-3 h-3 text-brand" />
                             </div>
                             <p className="text-white/50 text-xs">{data.role}</p>
                         </div>
@@ -168,7 +180,7 @@ const TestimonialCard = ({ data, index }: { data: typeof testimonials[0], index:
                 >
                    <div className="flex items-center gap-2">
                      <h3 className="text-2xl font-bold text-white leading-tight">{data.name}</h3>
-                     <Verified className="w-4 h-4 text-primary" />
+                     <Verified className="w-4 h-4 text-brand" />
                    </div>
                    <p className="text-white/70 text-sm font-medium">{data.role}</p>
                 </motion.div>
@@ -183,7 +195,7 @@ const Testimonials = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   
   return (
-    <section className="py-24 overflow-hidden">
+    <section className="section-y overflow-hidden">
       <div className="container mb-12">
         <div className="flex items-end justify-between">
           <div className="max-w-xl">
@@ -205,7 +217,7 @@ const Testimonials = () => {
       {/* Horizontal Scroll Container */}
       <div 
         ref={containerRef}
-        className="flex overflow-x-auto gap-6 pb-12 px-6 md:px-[max(24px,calc((100vw-1280px)/2+24px))] snap-x snap-mandatory scrollbar-hide"
+        className="flex overflow-x-auto gap-6 pb-12 px-[max(1.5rem,calc((100%-1200px)/2+1.5rem))] scroll-px-[max(1.5rem,calc((100%-1200px)/2+1.5rem))] snap-x snap-mandatory scrollbar-hide"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
         {testimonials.map((t, i) => (
@@ -214,11 +226,11 @@ const Testimonials = () => {
         {/* Placeholder for "You Next?" */}
         <div 
           onClick={() => document.getElementById("book-call")?.scrollIntoView({ behavior: "smooth" })}
-          className="relative min-w-[280px] sm:min-w-[320px] h-[440px] sm:h-[480px] rounded-3xl border-2 border-dashed border-primary/20 flex flex-col items-center justify-center gap-4 shrink-0 snap-center bg-primary/5 hover:bg-primary/10 transition-all duration-500 cursor-pointer group overflow-hidden"
+          className="relative min-w-[280px] sm:min-w-[320px] h-[440px] sm:h-[480px] rounded-3xl border-2 border-dashed border-primary/25 flex flex-col items-center justify-center gap-4 shrink-0 snap-center bg-primary/5 hover:bg-primary/10 transition-all duration-500 cursor-pointer group overflow-hidden"
         >
            <div className="flex flex-col items-center gap-4 group-hover:scale-95 transition-transform duration-500 delay-100">
              <div className="w-20 h-20 rounded-full bg-background flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500">
-               <span className="text-4xl">🚀</span>
+               <Rocket className="w-8 h-8 text-primary" />
              </div>
              <p className="text-2xl font-bold text-foreground">You're Next?</p>
              <p className="text-sm text-muted-foreground text-center max-w-[200px] leading-relaxed">Join the brands dominating their niche.</p>
