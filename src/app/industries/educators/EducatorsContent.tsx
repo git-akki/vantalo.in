@@ -13,7 +13,7 @@ export default function EducatorsContent() {
       <section className="container mb-24">
         <motion.div initial="hidden" animate="visible" variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
           <motion.div variants={fadeInUp as unknown as unknown as Variants}>
-            <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary rounded-full mb-6">
+            <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary-ink rounded-full mb-6">
               <GraduationCap className="w-3.5 h-3.5 mr-2" />
               For Educators & Course Creators
             </Badge>
@@ -79,10 +79,10 @@ export default function EducatorsContent() {
               },
             ].map((item, i) => (
               <motion.div key={i} variants={fadeInUp as unknown as unknown as Variants} className="bg-card border border-border/50 p-8 rounded-2xl">
-                <item.icon className="w-8 h-8 text-primary mb-4" />
+                <item.icon className="w-8 h-8 text-primary-ink mb-4" />
                 <h3 className="text-xl font-bold mb-3">{item.title}</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">{item.desc}</p>
-                <Link href={item.link} className="inline-flex items-center gap-1 text-sm text-primary font-medium hover:underline">
+                <Link href={item.link} className="inline-flex items-center gap-1 text-sm text-primary-ink font-medium hover:underline">
                   Learn more <ArrowRight className="w-3 h-3" />
                 </Link>
               </motion.div>
@@ -110,7 +110,7 @@ export default function EducatorsContent() {
       <section className="bg-secondary/5 py-24 border-y border-border/50 mb-24">
         <div className="container">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants}>
-            <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary rounded-full mb-6">Case Study</Badge>
+            <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary-ink rounded-full mb-6">Case Study</Badge>
             <motion.h2 variants={fadeInUp as unknown as unknown as Variants} className="text-3xl font-bold mb-4">Hair Mastery: Education Platform + Social Growth</motion.h2>
             <motion.p variants={fadeInUp as unknown as unknown as Variants} className="text-lg text-muted-foreground leading-relaxed mb-4 max-w-2xl">
               We built a complete growth system for Hair Mastery — a custom WordPress LMS with instructor economy, secure Vimeo streaming, and role-based access. Combined with an organic social strategy that grew them from 0 to 48K+ followers and 1.2M monthly reach.
@@ -132,8 +132,8 @@ export default function EducatorsContent() {
               ))}
             </motion.div>
             <div className="flex gap-4">
-              <Link href="/work/hair-mastery" className="text-primary font-medium hover:underline">Platform case study →</Link>
-              <Link href="/work/hair-mastery-social" className="text-primary font-medium hover:underline">Social case study →</Link>
+              <Link href="/work/hair-mastery" className="text-primary-ink font-medium hover:underline">Platform case study →</Link>
+              <Link href="/work/hair-mastery-social" className="text-primary-ink font-medium hover:underline">Social case study →</Link>
             </div>
           </motion.div>
         </div>
@@ -157,7 +157,7 @@ export default function EducatorsContent() {
                 "Membership site operators who need recurring billing, gated content, and community features",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-primary-ink shrink-0 mt-0.5" />
                   <span className="text-muted-foreground">{item}</span>
                 </li>
               ))}
@@ -201,7 +201,7 @@ export default function EducatorsContent() {
           <div className="bg-card border border-border/50 rounded-2xl p-6">
             <p className="text-sm text-muted-foreground">
               <strong className="text-foreground">Source:</strong> Research and Markets, <em>Global Online Education Market Report, 2025</em>.{" "}
-              <a href="https://www.researchandmarkets.com/reports/4986759/online-education-market-global-industry" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+              <a href="https://www.researchandmarkets.com/reports/4986759/online-education-market-global-industry" target="_blank" rel="noopener noreferrer" className="text-primary-ink hover:underline">
                 researchandmarkets.com
               </a>
             </p>

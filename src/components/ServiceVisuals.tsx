@@ -126,7 +126,7 @@ export const WebsiteVisual = () => {
                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                className="absolute top-0 left-0 pointer-events-none z-20"
             >
-               <MousePointer2 className="w-4 h-4 text-primary fill-primary/20" />
+               <MousePointer2 className="w-4 h-4 text-primary-ink fill-primary/20" />
             </motion.div>
          </div>
       </div>
@@ -144,7 +144,7 @@ export const AiVisual = () => {
              transition={{ duration: 2, repeat: Infinity }}
              className="w-16 h-16 bg-card border border-border rounded-2xl flex items-center justify-center shadow-lg relative"
           >
-             <Bot className="w-8 h-8 text-primary" />
+             <Bot className="w-8 h-8 text-primary-ink" />
              <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-background" />
           </motion.div>
        </div>

@@ -36,7 +36,7 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex items-center justify-between py-5 text-left group"
       >
-        <h3 className="text-base font-semibold text-foreground pr-4 group-hover:text-primary transition-colors">
+        <h3 className="text-base font-semibold text-foreground pr-4 group-hover:text-primary-ink transition-colors">
           {question}
         </h3>
         <ChevronDown

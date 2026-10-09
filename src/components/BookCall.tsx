@@ -34,7 +34,7 @@ const BookCall = () => {
 
           <motion.div variants={staggerContainer as unknown as unknown as Variants} className="relative z-10 max-w-3xl">
             <motion.div variants={fadeInUp as unknown as unknown as Variants} className="mb-8">
-              <Badge variant="outline" className="px-4 py-1.5 gap-2 border-primary/20 bg-primary/5 text-primary hover:bg-primary/10 transition-colors">
+              <Badge variant="outline" className="px-4 py-1.5 gap-2 border-primary/20 bg-primary/5 text-primary-ink hover:bg-primary/10 transition-colors">
                 <Calendar className="w-3.5 h-3.5" />
                 <span className="text-sm font-medium tracking-wide">
                   Discovery Session
@@ -43,7 +43,7 @@ const BookCall = () => {
             </motion.div>
 
             <motion.h2 variants={fadeInUp as unknown as unknown as Variants} className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 tracking-tight text-foreground">
-              Let’s build your <span className="text-primary">infrastructure.</span>
+              Let’s build your <span className="text-primary-ink">infrastructure.</span>
             </motion.h2>
 
             <motion.p variants={fadeInUp as unknown as unknown as Variants} className="text-lg text-muted-foreground mb-10 max-w-2xl leading-relaxed">
@@ -87,7 +87,7 @@ const BookCall = () => {
                   "Actionable roadmap"
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <CheckCircle2 className="w-4 h-4 text-primary/60" />
+                    <CheckCircle2 className="w-4 h-4 text-primary-ink/60" />
                     {item}
                   </div>
                 ))}

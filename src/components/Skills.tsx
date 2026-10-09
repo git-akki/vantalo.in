@@ -81,7 +81,7 @@ const Skills = () => {
             variants={fadeInUp as unknown as unknown as Variants} 
             className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4"
           >
-            Our <span className="text-primary">Tech Stack</span>
+            Our <span className="text-primary-ink">Tech Stack</span>
           </motion.h2>
           <motion.p 
             variants={fadeInUp as unknown as unknown as Variants} 
@@ -114,7 +114,7 @@ const Skills = () => {
                     variants={fadeInUp as unknown as unknown as Variants}
                     className="flex items-center gap-3 p-2 rounded-lg hover:bg-secondary/50 transition-colors"
                   >
-                    <div className="p-2 bg-primary/10 rounded-md text-primary">
+                    <div className="p-2 bg-primary/10 rounded-md text-primary-ink">
                       <item.icon className="w-5 h-5" />
                     </div>
                     <span className="font-medium">{item.name}</span>

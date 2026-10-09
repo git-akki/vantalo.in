@@ -22,7 +22,7 @@ export default function TermsPage() {
         <h2 className="text-xl font-semibold text-foreground">4. Limitation of Liability</h2>
         <p>Vantalo shall not be liable for any indirect, incidental, or consequential damages arising from the use of our services or website.</p>
         <h2 className="text-xl font-semibold text-foreground">5. Contact</h2>
-        <p>For questions about these terms, contact us at <a href="/contact" className="text-primary hover:underline">vantalo.in/contact</a>.</p>
+        <p>For questions about these terms, contact us at <a href="/contact" className="text-primary-ink hover:underline">vantalo.in/contact</a>.</p>
       </div>
     </div>
   );

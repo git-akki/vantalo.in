@@ -199,7 +199,7 @@ const Testimonials = () => {
       <div className="container mb-12">
         <div className="flex items-end justify-between">
           <div className="max-w-xl">
-             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider mb-6">
+             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary-ink text-xs font-bold uppercase tracking-wider mb-6">
                <Heart className="w-3 h-3" />
                Wall of Love
              </div>
@@ -230,7 +230,7 @@ const Testimonials = () => {
         >
            <div className="flex flex-col items-center gap-4 group-hover:scale-95 transition-transform duration-500 delay-100">
              <div className="w-20 h-20 rounded-full bg-background flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500">
-               <Rocket className="w-8 h-8 text-primary" />
+               <Rocket className="w-8 h-8 text-primary-ink" />
              </div>
              <p className="text-2xl font-bold text-foreground">You're Next?</p>
              <p className="text-sm text-muted-foreground text-center max-w-[200px] leading-relaxed">Join the brands dominating their niche.</p>

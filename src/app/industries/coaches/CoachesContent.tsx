@@ -13,7 +13,7 @@ export default function CoachesContent() {
       <section className="container mb-24">
         <motion.div initial="hidden" animate="visible" variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
           <motion.div variants={fadeInUp as unknown as unknown as Variants}>
-            <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary rounded-full mb-6">
+            <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary-ink rounded-full mb-6">
               For Coaches & Consultants
             </Badge>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
@@ -83,7 +83,7 @@ export default function CoachesContent() {
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-bold mb-4">{service.title}</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">{service.desc}</p>
-                <Link href={service.link} className="inline-flex items-center gap-2 text-primary font-medium hover:underline">
+                <Link href={service.link} className="inline-flex items-center gap-2 text-primary-ink font-medium hover:underline">
                   Learn more <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -91,7 +91,7 @@ export default function CoachesContent() {
                 <ul className="space-y-4">
                   {service.features.map((f, j) => (
                     <li key={j} className="flex items-center gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                      <CheckCircle2 className="w-5 h-5 text-primary-ink shrink-0" />
                       <span className="text-foreground font-medium">{f}</span>
                     </li>
                   ))}
@@ -166,7 +166,7 @@ export default function CoachesContent() {
                 "Relationship and mindset coaches who need systems to handle growing demand",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-primary-ink shrink-0 mt-0.5" />
                   <span className="text-muted-foreground">{item}</span>
                 </li>
               ))}
@@ -210,7 +210,7 @@ export default function CoachesContent() {
           <div className="bg-card border border-border/50 rounded-2xl p-6">
             <p className="text-sm text-muted-foreground">
               <strong className="text-foreground">Source:</strong> International Coaching Federation, <em>2023 ICF Global Coaching Study</em>.{" "}
-              <a href="https://coachingfederation.org/research/global-coaching-study" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+              <a href="https://coachingfederation.org/research/global-coaching-study" target="_blank" rel="noopener noreferrer" className="text-primary-ink hover:underline">
                 coachingfederation.org/research/global-coaching-study
               </a>
             </p>

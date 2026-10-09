@@ -23,7 +23,7 @@ const About = () => {
             className="flex flex-col justify-center h-full"
           >
             <motion.div variants={fadeInUp as unknown as unknown as Variants} className="mb-6">
-              <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary">
+              <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary-ink">
                 <Activity className="w-3 h-3 mr-2 animate-pulse" />
                 The Vantalo Standard
               </Badge>
@@ -31,7 +31,7 @@ const About = () => {
             
             <motion.h2 variants={fadeInUp as unknown as unknown as Variants} className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 tracking-tight">
               We don't sell "marketing". <br />
-              <span className="text-primary">We install infrastructure.</span>
+              <span className="text-primary-ink">We install infrastructure.</span>
             </motion.h2>
             
             <motion.p variants={fadeInUp as unknown as unknown as Variants} className="text-muted-foreground text-lg mb-8 leading-relaxed max-w-xl">
@@ -46,11 +46,11 @@ const About = () => {
                 whileHover={{ x: 5 }}
                 className="group flex items-center gap-5 p-4 rounded-2xl border border-transparent hover:border-primary/10 hover:bg-secondary/30 transition-colors duration-300"
               >
-                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-[0_8px_20px_-8px_hsl(var(--primary)/0.4)]">
+                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary-ink shrink-0 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-[0_8px_20px_-8px_hsl(var(--primary)/0.4)]">
                   <Cpu className="w-7 h-7 group-hover:rotate-12 transition-transform duration-500" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-1 group-hover:text-primary transition-colors">Operational Velocity</h3>
+                  <h3 className="text-lg font-semibold text-foreground mb-1 group-hover:text-primary-ink transition-colors">Operational Velocity</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Replacing manual bottlenecks with agentic swarms.
                   </p>
@@ -63,11 +63,11 @@ const About = () => {
                 whileHover={{ x: 5 }}
                 className="group flex items-center gap-5 p-4 rounded-2xl border border-transparent hover:border-primary/10 hover:bg-secondary/30 transition-colors duration-300"
               >
-                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-[0_8px_20px_-8px_hsl(var(--primary)/0.4)]">
+                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary-ink shrink-0 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-[0_8px_20px_-8px_hsl(var(--primary)/0.4)]">
                   <Target className="w-7 h-7 group-hover:rotate-12 transition-transform duration-500" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-1 group-hover:text-primary transition-colors">Signal Precision</h3>
+                  <h3 className="text-lg font-semibold text-foreground mb-1 group-hover:text-primary-ink transition-colors">Signal Precision</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Targeting high-intent ICPs with algorithmic resonance.
                   </p>
@@ -80,11 +80,11 @@ const About = () => {
                 whileHover={{ x: 5 }}
                 className="group flex items-center gap-5 p-4 rounded-2xl border border-transparent hover:border-primary/10 hover:bg-secondary/30 transition-colors duration-300"
               >
-                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-[0_8px_20px_-8px_hsl(var(--primary)/0.4)]">
+                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary-ink shrink-0 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-[0_8px_20px_-8px_hsl(var(--primary)/0.4)]">
                   <MonitorSmartphone className="w-7 h-7 group-hover:rotate-12 transition-transform duration-500" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-1 group-hover:text-primary transition-colors">Conversion Architecture</h3>
+                  <h3 className="text-lg font-semibold text-foreground mb-1 group-hover:text-primary-ink transition-colors">Conversion Architecture</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Turning passive traffic into revenue through telemetry.
                   </p>
@@ -114,12 +114,12 @@ const About = () => {
                 {/* Status Indicator */}
                 <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 mb-4">
                   <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse shadow-[0_0_8px_hsl(var(--brand)/0.6)]" />
-                  <span className="text-[10px] font-semibold text-primary tracking-wider">GROWTH OS</span>
+                  <span className="text-[10px] font-semibold text-primary-ink tracking-wider">GROWTH OS</span>
                 </div>
                 
                 {/* Logo */}
                 <div className="text-3xl font-bold tracking-tight text-center">
-                  Vantalo<span className="text-primary">.in</span>
+                  Vantalo<span className="text-primary-ink">.in</span>
                 </div>
                 
                 {/* Orbiting Rings - Multiple Layers */}
@@ -156,7 +156,7 @@ const About = () => {
                   >
                     <div className="w-16 h-16 bg-background border border-border group-hover:border-primary/50 rounded-2xl flex items-center justify-center shadow-xl transition-colors duration-300 relative overflow-hidden z-20">
                        <div className="absolute inset-0 bg-primary/5 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-                       <Cpu className="w-8 h-8 text-primary group-hover:animate-pulse relative z-10" />
+                       <Cpu className="w-8 h-8 text-primary-ink group-hover:animate-pulse relative z-10" />
                     </div>
                   </motion.div>
                   {/* Connecting Line (Fixed relative to node, pointing to center) */}
@@ -178,7 +178,7 @@ const About = () => {
                   >
                     <div className="w-16 h-16 bg-background border border-border group-hover:border-primary/50 rounded-2xl flex items-center justify-center shadow-xl transition-colors duration-300 relative overflow-hidden z-20">
                        <div className="absolute inset-0 bg-primary/5 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-                       <Target className="w-8 h-8 text-primary group-hover:animate-pulse relative z-10" />
+                       <Target className="w-8 h-8 text-primary-ink group-hover:animate-pulse relative z-10" />
                     </div>
                   </motion.div>
                   {/* Correct Line Placement: Sibling of IconWrapper, inside Rotated NodeGroup */}
@@ -200,7 +200,7 @@ const About = () => {
                   >
                     <div className="w-16 h-16 bg-background border border-border group-hover:border-primary/50 rounded-2xl flex items-center justify-center shadow-xl transition-colors duration-300 relative overflow-hidden z-20">
                        <div className="absolute inset-0 bg-primary/5 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-                       <MonitorSmartphone className="w-8 h-8 text-primary group-hover:animate-pulse relative z-10" />
+                       <MonitorSmartphone className="w-8 h-8 text-primary-ink group-hover:animate-pulse relative z-10" />
                     </div>
                   </motion.div>
                   {/* Line */}
@@ -223,7 +223,7 @@ const About = () => {
                   transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
                   style={{ originX: "50%", originY: "50%" }}
                 />
-                <circle cx="50%" cy="50%" r="140" fill="none" stroke="currentColor" strokeWidth="1" className="text-primary/50" />
+                <circle cx="50%" cy="50%" r="140" fill="none" stroke="currentColor" strokeWidth="1" className="text-primary-ink/50" />
               </svg>
               </div>
 

@@ -55,7 +55,7 @@ const Process = () => {
           </motion.div>
           
           <motion.h2 variants={fadeInUp as unknown as Variants} className="text-4xl sm:text-5xl font-bold mb-6">
-            From <span className="text-primary">Strategy</span> to <span className="text-primary">Scale</span>
+            From <span className="text-primary-ink">Strategy</span> to <span className="text-primary-ink">Scale</span>
           </motion.h2>
           
           <motion.p variants={fadeInUp as unknown as Variants} className="text-muted-foreground text-lg max-w-2xl mx-auto mb-10">
@@ -140,7 +140,7 @@ const getServiceContent = (type: ServiceType) => {
                     <div className="absolute top-0 left-1/2 w-1.5 h-1.5 bg-primary rounded-full -translate-x-1/2 -translate-y-1/2 shadow-[0_0_10px_hsl(var(--brand)/0.8)]" />
                   </motion.div>
                   <div className="absolute inset-0 flex items-center justify-center flex-col gap-1">
-                    <span className="text-xs font-bold text-primary tracking-widest">SIGNAL</span>
+                    <span className="text-xs font-bold text-primary-ink tracking-widest">SIGNAL</span>
                     <span className="text-[10px] text-muted-foreground uppercase">Detected</span>
                   </div>
                 </div>
@@ -157,14 +157,14 @@ const getServiceContent = (type: ServiceType) => {
             <div className="h-full bg-secondary/30 rounded-lg border border-border/50 p-5 font-mono text-xs relative overflow-hidden flex flex-col justify-center">
                <div className="space-y-3 opacity-90">
                   <div className="flex gap-3">
-                    <span className="text-primary font-bold">01</span>
+                    <span className="text-primary-ink font-bold">01</span>
                     <span className="text-muted-foreground"># Hook: Pattern Break</span>
                   </div>
                   <div className="pl-8 text-foreground/80 border-l border-border ml-1.5">
                     "Stop [Old Method]. Use [New Mechanism]."
                   </div>
                   <div className="flex gap-3 mt-2">
-                    <span className="text-primary font-bold">02</span>
+                    <span className="text-primary-ink font-bold">02</span>
                     <span className="text-muted-foreground"># Visual: Dynamic Cut</span>
                   </div>
                </div>
@@ -203,7 +203,7 @@ const getServiceContent = (type: ServiceType) => {
                  <div className="flex justify-between items-center mt-4">
                     <div className="flex gap-1">
                       <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-                      <span className="text-[9px] uppercase tracking-wider text-primary font-medium">REC</span>
+                      <span className="text-[9px] uppercase tracking-wider text-primary-ink font-medium">REC</span>
                     </div>
                     <span className="text-[9px] font-mono text-muted-foreground">00:00:12:45</span>
                  </div>
@@ -231,7 +231,7 @@ const getServiceContent = (type: ServiceType) => {
                   </div>
                 ))}
                 <div className="absolute top-6 left-6 flex items-center gap-2 bg-background/80 backdrop-blur-sm p-1.5 rounded border border-border shadow-sm">
-                   <ArrowUp className="w-3 h-3 text-primary" />
+                   <ArrowUp className="w-3 h-3 text-primary-ink" />
                    <div>
                       <div className="text-xs font-bold text-foreground">+245%</div>
                    </div>
@@ -272,7 +272,7 @@ const getServiceContent = (type: ServiceType) => {
                    <motion.div 
                      animate={{ x: [40, 120, 60], y: [40, 70, 20] }}
                      transition={{ duration: 4, repeat: Infinity }}
-                     className="absolute w-3 h-3 text-primary drop-shadow-sm z-10"
+                     className="absolute w-3 h-3 text-primary-ink drop-shadow-sm z-10"
                    >
                       <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
                         <path d="M5.65376 12.3673H5.46026L5.31717 12.4976L0.500002 16.8829L0.500002 1.19169L11.7841 12.3673H5.65376Z" />
@@ -296,18 +296,18 @@ const getServiceContent = (type: ServiceType) => {
                 <div className="space-y-0.5">
                    <div className="flex gap-1.5">
                       <span className="text-muted-foreground">export default</span>
-                      <span className="text-primary">async</span>
+                      <span className="text-primary-ink">async</span>
                       <span className="text-foreground">Page()</span> {`{`}
                    </div>
                    <div className="pl-4 text-muted-foreground/50">// Server Component</div>
                    <div className="pl-4 text-foreground">return (</div>
                    <div className="pl-8">
-                      <span className="text-primary">&lt;Suspense&gt;</span>
+                      <span className="text-primary-ink">&lt;Suspense&gt;</span>
                    </div>
                    <div className="pl-12 flex items-center gap-1">
                       <span className="text-foreground">&lt;Content /&gt;</span>
                    </div>
-                   <div className="pl-8 text-primary">&lt;/Suspense&gt;</div>
+                   <div className="pl-8 text-primary-ink">&lt;/Suspense&gt;</div>
                    <div className="pl-4 text-foreground">)</div>
                    <div className="text-foreground">{`}`}</div>
                 </div>
@@ -336,12 +336,12 @@ const getServiceContent = (type: ServiceType) => {
                    </div>
                    
                    <div className="w-10 h-10 bg-primary/5 rounded border border-primary/20 flex items-center justify-center shadow-sm z-10">
-                      <Database className="w-4 h-4 text-primary" />
+                      <Database className="w-4 h-4 text-primary-ink" />
                    </div>
                 </div>
                 <div className="absolute bottom-6 flex items-center gap-1.5 px-2 py-1 bg-primary/5 rounded border border-primary/10">
                    <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-                   <span className="text-[10px] font-medium text-primary uppercase tracking-wider">Synced</span>
+                   <span className="text-[10px] font-medium text-primary-ink uppercase tracking-wider">Synced</span>
                 </div>
              </div>
           </Card>
@@ -411,7 +411,7 @@ const getServiceContent = (type: ServiceType) => {
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                       </span>
-                      <Clock className="w-4 h-4 text-primary" />
+                      <Clock className="w-4 h-4 text-primary-ink" />
                    </div>
                 </div>
              </div>
@@ -428,7 +428,7 @@ const getServiceContent = (type: ServiceType) => {
                 <div className="relative w-full max-w-[200px] h-32 bg-secondary/20 rounded-xl border border-border/50 p-4">
                    <div className="flex items-center gap-3 mb-4">
                       <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center border border-primary/10">
-                         <Network className="w-4 h-4 text-primary" />
+                         <Network className="w-4 h-4 text-primary-ink" />
                       </div>
                       <div className="h-1.5 w-16 bg-secondary rounded-full" />
                    </div>
@@ -473,7 +473,7 @@ const getServiceContent = (type: ServiceType) => {
              <div className="h-full flex items-center justify-center">
                 <div className="relative">
                    <div className="w-14 h-14 rounded-full border border-primary/20 flex items-center justify-center relative z-10 bg-background shadow-sm">
-                      <CircuitBoard className="w-5 h-5 text-primary" />
+                      <CircuitBoard className="w-5 h-5 text-primary-ink" />
                    </div>
                    {/* Orbiting Apps */}
                    {[0, 120, 240].map((deg, i) => (
@@ -524,7 +524,7 @@ const getServiceContent = (type: ServiceType) => {
                 <div>
                    <div className="flex justify-between items-end mb-2">
                       <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Velocity</span>
-                      <span className="text-xs font-mono text-primary font-bold">+100x</span>
+                      <span className="text-xs font-mono text-primary-ink font-bold">+100x</span>
                    </div>
                    <div className="w-full h-1.5 bg-secondary rounded-full overflow-hidden">
                       <motion.div 
@@ -557,8 +557,8 @@ const Card = ({ step, title, description, icon: Icon, children }: CardProps) => 
   >
     <div className="mb-6 flex flex-col gap-3">
       <div className="flex items-center justify-between">
-         <span className="text-xs font-mono text-primary/80 font-medium tracking-wider bg-primary/5 px-2 py-1 rounded border border-primary/10">{step}</span>
-         {Icon && <Icon className="w-5 h-5 text-muted-foreground/40 group-hover:text-primary/60 transition-colors" />}
+         <span className="text-xs font-mono text-primary-ink/80 font-medium tracking-wider bg-primary/5 px-2 py-1 rounded border border-primary/10">{step}</span>
+         {Icon && <Icon className="w-5 h-5 text-muted-foreground/40 group-hover:text-primary-ink/60 transition-colors" />}
       </div>
       
       <div>

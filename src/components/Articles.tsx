@@ -75,7 +75,7 @@ const Articles = () => {
                 <ArrowUpRight className="w-4 h-4 text-muted-foreground transition-all opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </div>
 
-              <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors line-clamp-2">
+              <h3 className="text-lg font-semibold mb-2 group-hover:text-primary-ink transition-colors line-clamp-2">
                 {article.title}
               </h3>
 

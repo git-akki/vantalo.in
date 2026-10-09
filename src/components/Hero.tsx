@@ -41,7 +41,7 @@ const Hero = () => {
               className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight mb-6 leading-[1.1]"
             >
               AI-Powered <br />
-              <span className="text-primary">Social Media.</span> <br />
+              <span className="text-primary-ink">Social Media.</span> <br />
               Web. Automation.
             </motion.h1>
 
@@ -75,7 +75,7 @@ const Hero = () => {
               <motion.div variants={fadeInUp as unknown as unknown as Variants} className="flex items-center h-14">
                 <Link
                   href="/services"
-                  className="group inline-flex items-center gap-2 text-foreground font-medium transition-colors hover:text-primary"
+                  className="group inline-flex items-center gap-2 text-foreground font-medium transition-colors hover:text-primary-ink"
                 >
                   <span className="border-b border-foreground/30 group-hover:border-primary pb-0.5">How it works</span>
                 </Link>
@@ -101,7 +101,7 @@ const Hero = () => {
                />
                
                {/* Connecting Lines Animation */}
-               <svg className="absolute inset-0 w-full h-full text-primary/20" viewBox="0 0 400 400">
+               <svg className="absolute inset-0 w-full h-full text-primary-ink/20" viewBox="0 0 400 400">
                   <motion.path 
                     d="M200,200 L100,80" 
                     fill="none" 
@@ -187,7 +187,7 @@ const Hero = () => {
                {/* Central Core */}
                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 sm:w-32 sm:h-32 bg-card border border-primary/20 rounded-full flex items-center justify-center shadow-2xl z-0">
                   <div className="w-16 h-16 sm:w-24 sm:h-24 bg-primary/5 rounded-full flex items-center justify-center animate-pulse">
-                    <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
+                    <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-primary-ink" />
                   </div>
                </div>
             </div>

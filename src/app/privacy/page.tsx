@@ -22,9 +22,9 @@ export default function PrivacyPage() {
         <h2 className="text-xl font-semibold text-foreground">4. Cookies</h2>
         <p>We use essential cookies for website functionality and analytics cookies to understand usage patterns. You can control cookies through your browser settings.</p>
         <h2 className="text-xl font-semibold text-foreground">5. Your Rights</h2>
-        <p>You have the right to access, correct, or delete your personal data. Contact us at <a href="/contact" className="text-primary hover:underline">vantalo.in/contact</a> to exercise these rights.</p>
+        <p>You have the right to access, correct, or delete your personal data. Contact us at <a href="/contact" className="text-primary-ink hover:underline">vantalo.in/contact</a> to exercise these rights.</p>
         <h2 className="text-xl font-semibold text-foreground">6. Contact</h2>
-        <p>For privacy-related questions, contact us at <a href="/contact" className="text-primary hover:underline">vantalo.in/contact</a>.</p>
+        <p>For privacy-related questions, contact us at <a href="/contact" className="text-primary-ink hover:underline">vantalo.in/contact</a>.</p>
       </div>
     </div>
   );

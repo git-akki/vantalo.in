@@ -49,7 +49,7 @@ const ProjectCard = ({ project, className }: { project: typeof projects[0], clas
             </Badge>
             
             <div className="space-y-1">
-               <h3 className="text-2xl font-bold leading-tight tracking-tight group-hover:text-primary transition-colors">
+               <h3 className="text-2xl font-bold leading-tight tracking-tight group-hover:text-primary-ink transition-colors">
                  {project.title}
                </h3>
                
@@ -112,12 +112,12 @@ const ProjectCard = ({ project, className }: { project: typeof projects[0], clas
           className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16"
         >
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary-ink text-xs font-bold uppercase tracking-wider mb-6">
                <TrendingUp className="w-3 h-3" />
                Case Studies
             </div>
             <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-              Results That <span className="text-primary">Scale.</span>
+              Results That <span className="text-primary-ink">Scale.</span>
             </h2>
             <p className="text-muted-foreground text-lg">
               Real work, real numbers. From viral campaigns to high-performance websites.

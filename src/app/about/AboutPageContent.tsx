@@ -21,7 +21,7 @@ export default function AboutPageContent() {
         >
            <div className="order-2 lg:order-1 text-left">
               <motion.div variants={fadeInUp as unknown as unknown as Variants} className="flex items-center gap-2 mb-6">
-                 <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary rounded-full">
+                 <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary-ink rounded-full">
                    <Users className="w-3 h-3 mr-2" />
                    Who We Are
                  </Badge>
@@ -32,7 +32,7 @@ export default function AboutPageContent() {
                 className="text-3xl sm:text-5xl lg:text-7xl font-bold tracking-tight mb-6 leading-[1.1]"
               >
                 We Are the <br/> Engineers of the <br />
-                <span className="text-primary">New Economy.</span>
+                <span className="text-primary-ink">New Economy.</span>
               </motion.h1>
 
               <motion.p
@@ -68,7 +68,7 @@ export default function AboutPageContent() {
                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                    className="absolute top-[15%] left-[10%] p-3 bg-card border border-border rounded-xl shadow-lg backdrop-blur-sm z-10"
                  >
-                    <Brain className="w-6 h-6 text-primary" />
+                    <Brain className="w-6 h-6 text-primary-ink" />
                  </motion.div>
 
                  <motion.div
@@ -88,11 +88,11 @@ export default function AboutPageContent() {
                  </motion.div>
 
                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 sm:w-32 sm:h-32 bg-card border border-primary/30 rounded-full flex items-center justify-center shadow-2xl z-20">
-                    <Cpu className="w-8 h-8 sm:w-12 sm:h-12 text-primary" />
+                    <Cpu className="w-8 h-8 sm:w-12 sm:h-12 text-primary-ink" />
                     <div className="absolute inset-0 bg-primary/10 rounded-full animate-ping opacity-20" />
                  </div>
 
-                 <svg className="absolute inset-0 w-full h-full text-primary/20 pointer-events-none" viewBox="0 0 400 400">
+                 <svg className="absolute inset-0 w-full h-full text-primary-ink/20 pointer-events-none" viewBox="0 0 400 400">
                     <path d="M200,200 L100,100" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="4,4" />
                     <path d="M200,200 L300,300" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="4,4" />
                     <path d="M200,200 L350,180" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="4,4" />
@@ -140,7 +140,7 @@ export default function AboutPageContent() {
                           />
                           <div className="flex items-center gap-4 mb-4 relative z-10">
                              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20">
-                                <Brain className="w-5 h-5 text-primary" />
+                                <Brain className="w-5 h-5 text-primary-ink" />
                              </div>
                              <div>
                                 <div className="text-sm font-bold text-foreground">System Clarity</div>
@@ -165,7 +165,7 @@ export default function AboutPageContent() {
 
            <motion.div variants={staggerContainer as unknown as unknown as Variants}>
               <motion.h2 variants={fadeInUp as unknown as unknown as Variants} className="text-3xl sm:text-4xl font-bold mb-6">
-                 It Started With a <span className="text-primary">Frustration.</span>
+                 It Started With a <span className="text-primary-ink">Frustration.</span>
               </motion.h2>
               <motion.div variants={fadeInUp as unknown as unknown as Variants} className="space-y-6 text-muted-foreground text-lg leading-relaxed">
                  <p>
@@ -227,7 +227,7 @@ export default function AboutPageContent() {
                      variants={fadeInUp as unknown as unknown as Variants}
                      className="group bg-card border border-border/50 p-8 rounded-2xl hover:border-primary/50 hover:shadow-lg transition-colors duration-300"
                   >
-                     <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-300">
+                     <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary-ink mb-6 group-hover:scale-110 transition-transform duration-300">
                         <item.icon className="w-6 h-6" />
                      </div>
                      <h3 className="text-xl font-bold mb-3 tracking-tight">{item.title}</h3>
@@ -250,7 +250,7 @@ export default function AboutPageContent() {
             className="text-center max-w-3xl mx-auto mb-16"
          >
             <motion.div variants={fadeInUp as unknown as unknown as Variants} className="flex justify-center mb-6">
-               <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary rounded-full">
+               <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary-ink rounded-full">
                  <Users className="w-3 h-3 mr-2" />
                  The Team
                </Badge>
@@ -355,7 +355,7 @@ export default function AboutPageContent() {
             <div className="order-2 lg:order-1">
                <motion.h2 variants={fadeInUp as unknown as unknown as Variants} className="text-3xl sm:text-4xl font-bold mb-6">
                   Our Promise: <br/>
-                  <span className="text-primary">Precision. Velocity. Transparency.</span>
+                  <span className="text-primary-ink">Precision. Velocity. Transparency.</span>
                </motion.h2>
                <motion.div variants={fadeInUp as unknown as unknown as Variants} className="space-y-6 text-muted-foreground text-lg leading-relaxed">
                   <p>
@@ -390,13 +390,13 @@ export default function AboutPageContent() {
                   <div className="relative h-full border border-border/60 bg-card shadow-2xl rounded-3xl p-8 flex flex-col justify-between">
                      <div className="flex justify-between items-start">
                         <div className="space-y-1">
-                           <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4">
+                           <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary-ink mb-4">
                               <Heart className="w-7 h-7 fill-current" />
                            </div>
                            <div className="font-bold text-xl tracking-tight">Partner Success</div>
                            <div className="text-sm text-muted-foreground">Real-time metrics</div>
                         </div>
-                        <div className="text-4xl font-mono font-bold text-primary tracking-tighter">100%</div>
+                        <div className="text-4xl font-mono font-bold text-primary-ink tracking-tighter">100%</div>
                      </div>
 
                      <div className="space-y-6">

@@ -14,7 +14,7 @@ export default function AIAutomationContent() {
       <section className="container mb-24">
         <motion.div initial="hidden" animate="visible" variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
           <motion.div variants={fadeInUp as unknown as unknown as Variants}>
-            <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary rounded-full mb-6">
+            <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary-ink rounded-full mb-6">
               <Bot className="w-3.5 h-3.5 mr-2" />
               AI Automation
             </Badge>
@@ -191,7 +191,7 @@ export default function AIAutomationContent() {
       <section className="bg-secondary/5 py-24 border-y border-border/50 mb-24">
         <div className="container">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants}>
-            <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary rounded-full mb-6">Case Studies</Badge>
+            <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary-ink rounded-full mb-6">Case Studies</Badge>
             <motion.h2 variants={fadeInUp as unknown as unknown as Variants} className="text-3xl font-bold mb-4">Automation Systems We&apos;ve Built</motion.h2>
             <motion.p variants={fadeInUp as unknown as unknown as Variants} className="text-muted-foreground leading-relaxed mb-8 max-w-2xl">
               Each of these systems was built to solve a specific operational bottleneck for our clients. They run 24/7 with minimal maintenance and have collectively saved hundreds of hours of manual work.
@@ -206,7 +206,7 @@ export default function AIAutomationContent() {
                   <Link href={item.link} className="block bg-card border border-border/50 p-6 rounded-2xl hover:border-primary/30 transition-colors h-full">
                     <h3 className="text-lg font-bold mb-2">{item.title}</h3>
                     <p className="text-sm text-muted-foreground mb-4">{item.desc}</p>
-                    <span className="text-primary text-sm font-medium">View case study →</span>
+                    <span className="text-primary-ink text-sm font-medium">View case study →</span>
                   </Link>
                 </motion.div>
               ))}

@@ -288,7 +288,7 @@ const AnalyzingScreen = ({ onComplete }: { onComplete: () => void }) => {
             className="relative mb-10"
           >
             <div className="w-24 h-24 rounded-3xl bg-primary/10 border border-primary/20 flex items-center justify-center relative overflow-hidden">
-              <Brain className="w-10 h-10 text-primary relative z-10" />
+              <Brain className="w-10 h-10 text-primary-ink relative z-10" />
               <motion.div
                 className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"
                 animate={{ y: ["100%", "0%", "100%"] }}
@@ -357,15 +357,15 @@ const AnalyzingScreen = ({ onComplete }: { onComplete: () => void }) => {
                       animate={{ rotate: 360 }}
                       transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
                     >
-                      <Scan className="w-3.5 h-3.5 text-primary shrink-0" />
+                      <Scan className="w-3.5 h-3.5 text-primary-ink shrink-0" />
                     </motion.div>
                   ) : null}
-                  <span className={isCurrent ? "text-primary" : ""}>{step.label}</span>
+                  <span className={isCurrent ? "text-primary-ink" : ""}>{step.label}</span>
                   {isCurrent && (
                     <motion.span
                       animate={{ opacity: [1, 0] }}
                       transition={{ duration: 0.5, repeat: Infinity }}
-                      className="text-primary"
+                      className="text-primary-ink"
                     >
                       _
                     </motion.span>
@@ -469,8 +469,8 @@ const WebsiteGrader = () => {
           >
             <motion.div variants={fadeInUp as unknown as Variants} className="mb-6 flex justify-center">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
-                <Bot className="w-4 h-4 text-primary" />
-                <span className="text-sm font-semibold text-primary">AI-Powered Audit</span>
+                <Bot className="w-4 h-4 text-primary-ink" />
+                <span className="text-sm font-semibold text-primary-ink">AI-Powered Audit</span>
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
@@ -480,7 +480,7 @@ const WebsiteGrader = () => {
 
             <motion.h1 variants={fadeInUp as unknown as Variants} className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
               Is Your Website{" "}
-              <span className="text-primary relative">
+              <span className="text-primary-ink relative">
                 Losing You Clients?
                 <motion.div
                   className="absolute -bottom-1 left-0 right-0 h-px bg-primary/40"
@@ -537,10 +537,10 @@ const WebsiteGrader = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-primary/10 transition-all duration-500" />
 
                 <div className="relative z-10">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:scale-110 group-hover:shadow-[0_0_20px_hsl(var(--brand)/0.3)] transition-all duration-300">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary-ink mb-4 group-hover:scale-110 group-hover:shadow-[0_0_20px_hsl(var(--brand)/0.3)] transition-all duration-300">
                     <niche.icon className="w-6 h-6" />
                   </div>
-                  <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">{niche.label}</h3>
+                  <h3 className="font-semibold text-foreground group-hover:text-primary-ink transition-colors">{niche.label}</h3>
                   <p className="text-xs text-muted-foreground mt-1">{niche.desc}</p>
                 </div>
               </motion.button>
@@ -579,8 +579,8 @@ const WebsiteGrader = () => {
           {/* Header */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-              <Bot className="w-4 h-4 text-primary" />
-              <span className="text-sm font-semibold text-primary">AI Audit Complete</span>
+              <Bot className="w-4 h-4 text-primary-ink" />
+              <span className="text-sm font-semibold text-primary-ink">AI Audit Complete</span>
               <CheckCircle2 className="w-3.5 h-3.5 text-green-500" />
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold mb-2">Your Website Audit Report</h2>
@@ -645,7 +645,7 @@ const WebsiteGrader = () => {
 
               <button
                 onClick={handleReset}
-                className="mt-6 flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                className="mt-6 flex items-center gap-2 text-sm text-muted-foreground hover:text-primary-ink transition-colors"
               >
                 <RotateCcw className="w-4 h-4" />
                 Start over
@@ -663,7 +663,7 @@ const WebsiteGrader = () => {
               >
                 <div className="flex items-center justify-between">
                   <h4 className="font-semibold text-lg flex items-center gap-2">
-                    <Scan className="w-4 h-4 text-primary" />
+                    <Scan className="w-4 h-4 text-primary-ink" />
                     Category Breakdown
                   </h4>
                   <span className="text-xs font-mono text-muted-foreground">5 MODULES SCANNED</span>
@@ -714,7 +714,7 @@ const WebsiteGrader = () => {
                 className="bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-6 space-y-4"
               >
                 <h4 className="font-semibold text-lg flex items-center gap-2">
-                  <Brain className="w-5 h-5 text-primary" />
+                  <Brain className="w-5 h-5 text-primary-ink" />
                   AI Recommendations
                 </h4>
                 <p className="text-xs text-muted-foreground font-mono mb-2">
@@ -728,7 +728,7 @@ const WebsiteGrader = () => {
                     transition={{ delay: 1.5 + i * 0.3 }}
                     className="flex gap-3 p-4 bg-secondary/10 border border-border/30 rounded-xl"
                   >
-                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary text-xs font-bold shrink-0 mt-0.5">
+                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary-ink text-xs font-bold shrink-0 mt-0.5">
                       {i + 1}
                     </span>
                     <p className="text-sm text-muted-foreground leading-relaxed">
@@ -751,7 +751,7 @@ const WebsiteGrader = () => {
                     animate={{ scale: [1, 1.05, 1] }}
                     transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                   >
-                    <TrendingUp className="w-8 h-8 text-primary mx-auto" />
+                    <TrendingUp className="w-8 h-8 text-primary-ink mx-auto" />
                   </motion.div>
                   <h4 className="text-xl font-bold">Want Us to Fix This For You?</h4>
                   <p className="text-sm text-muted-foreground max-w-md mx-auto">
@@ -797,7 +797,7 @@ const WebsiteGrader = () => {
           {/* Step Indicator */}
           <div className="flex justify-center mb-6">
             <div className="flex items-center gap-2 text-xs font-mono text-muted-foreground">
-              <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary/20 text-primary text-xs">
+              <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary/20 text-primary-ink text-xs">
                 <CheckCircle2 className="w-3.5 h-3.5" />
               </span>
               <span className="text-muted-foreground/60">Niche</span>
@@ -811,20 +811,20 @@ const WebsiteGrader = () => {
           </div>
 
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary rounded-full">
+            <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary-ink rounded-full">
               <Bot className="w-3.5 h-3.5 mr-2" />
               {niches.find((n) => n.id === selectedNiche)?.label}
             </Badge>
             <button
               onClick={handleReset}
-              className="text-xs text-muted-foreground hover:text-primary transition-colors underline underline-offset-2"
+              className="text-xs text-muted-foreground hover:text-primary-ink transition-colors underline underline-offset-2"
             >
               Change
             </button>
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-            Audit Your <span className="text-primary">Website</span>
+            Audit Your <span className="text-primary-ink">Website</span>
           </h1>
           <p className="text-muted-foreground max-w-xl mx-auto">
             Check each statement that's true for your site. Be honest — the AI needs accurate data.
@@ -858,7 +858,7 @@ const WebsiteGrader = () => {
                       <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 ${
                         catComplete
                           ? "bg-green-500/10 text-green-500"
-                          : "bg-primary/10 text-primary"
+                          : "bg-primary/10 text-primary-ink"
                       }`}>
                         {catComplete ? (
                           <CheckCircle2 className="w-5 h-5" />
@@ -946,7 +946,7 @@ const WebsiteGrader = () => {
                                 {item.weight === 3 && (
                                   <span className={`ml-auto shrink-0 text-[10px] font-mono px-2 py-0.5 rounded-full transition-colors ${
                                     isChecked
-                                      ? "text-primary bg-primary/15"
+                                      ? "text-primary-ink bg-primary/15"
                                       : "text-muted-foreground/50 bg-secondary/30"
                                   }`}>
                                     HIGH IMPACT

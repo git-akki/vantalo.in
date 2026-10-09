@@ -37,7 +37,7 @@ const ProjectCard = ({ project, className }: { project: typeof projects[0]; clas
             </Badge>
 
             <div className="space-y-1">
-               <h3 className="text-2xl font-bold leading-tight tracking-tight group-hover:text-primary transition-colors">
+               <h3 className="text-2xl font-bold leading-tight tracking-tight group-hover:text-primary-ink transition-colors">
                  {project.title}
                </h3>
 
@@ -77,7 +77,7 @@ export default function WorkPageContent() {
         >
           <div className="space-y-8">
             <motion.div variants={fadeInUp as unknown as unknown as Variants}>
-              <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary rounded-full mb-6">
+              <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary-ink rounded-full mb-6">
                 <FolderOpen className="w-3.5 h-3.5 mr-2 fill-primary/20" />
                 Selected Work
               </Badge>

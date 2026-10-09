@@ -34,7 +34,7 @@ const BookingTrust = () => {
                 >
                     {benefits.map((benefit, index) => (
                         <motion.div variants={fadeInUp as unknown as unknown as Variants} key={index} className="flex flex-col items-center text-center gap-3">
-                            <div className="p-3 rounded-full bg-primary/10 text-primary">
+                            <div className="p-3 rounded-full bg-primary/10 text-primary-ink">
                                 <benefit.icon className="w-6 h-6" />
                             </div>
                             <div>

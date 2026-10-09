@@ -54,7 +54,7 @@ export default function ProjectDetailContent({ slug }: { slug: string }) {
                 )}
               </div>
               <div className="flex flex-wrap gap-2 items-center text-sm text-muted-foreground">
-                <span className="font-medium text-primary">{project.category}</span>
+                <span className="font-medium text-primary-ink">{project.category}</span>
                 <span>&bull;</span>
                 <span>{project.tags.slice(0, 3).join(", ")}</span>
               </div>
@@ -137,11 +137,11 @@ export default function ProjectDetailContent({ slug }: { slug: string }) {
 
               {project.benefits && (
                 <div className="mt-6 bg-secondary/30 rounded-2xl p-6 border border-border/50">
-                  <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-primary">Key Features & Benefits</h4>
+                  <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-primary-ink">Key Features & Benefits</h4>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {project.benefits.map((benefit, i) => (
                       <li key={i} className="flex items-start gap-3 text-sm text-foreground/90">
-                        <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-5 h-5 text-primary-ink shrink-0 mt-0.5" />
                         <span>{benefit}</span>
                       </li>
                     ))}

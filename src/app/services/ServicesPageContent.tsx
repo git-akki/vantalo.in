@@ -22,7 +22,7 @@ export default function ServicesPageContent() {
         >
           <div className="space-y-8">
             <motion.div variants={fadeInUp as unknown as unknown as Variants}>
-              <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary rounded-full mb-6">
+              <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary-ink rounded-full mb-6">
                 <Zap className="w-3.5 h-3.5 mr-2 fill-primary/20" />
                 Holistic Growth Infrastructure
               </Badge>
@@ -134,7 +134,7 @@ export default function ServicesPageContent() {
                   ].map((item, i) => (
                      <motion.li key={i} variants={fadeInUp as unknown as unknown as Variants} className="flex gap-4">
                         <div className="mt-1 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                           <CheckCircle2 className="w-3 h-3 text-primary" />
+                           <CheckCircle2 className="w-3 h-3 text-primary-ink" />
                         </div>
                         <div>
                            <h4 className="font-semibold text-foreground">{item.title}</h4>
@@ -178,7 +178,7 @@ export default function ServicesPageContent() {
                   ].map((item, i) => (
                      <motion.li key={i} variants={fadeInUp as unknown as unknown as Variants} className="flex gap-4">
                         <div className="mt-1 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                           <CheckCircle2 className="w-3 h-3 text-primary" />
+                           <CheckCircle2 className="w-3 h-3 text-primary-ink" />
                         </div>
                         <div>
                            <h4 className="font-semibold text-foreground">{item.title}</h4>
@@ -244,7 +244,7 @@ export default function ServicesPageContent() {
                   ].map((item, i) => (
                      <motion.li key={i} variants={fadeInUp as unknown as unknown as Variants} className="flex gap-4">
                         <div className="mt-1 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                           <CheckCircle2 className="w-3 h-3 text-primary" />
+                           <CheckCircle2 className="w-3 h-3 text-primary-ink" />
                         </div>
                         <div>
                            <h4 className="font-semibold text-foreground">{item.title}</h4>
@@ -287,7 +287,7 @@ export default function ServicesPageContent() {
             </p>
           </motion.div>
           <motion.p variants={fadeInUp as unknown as unknown as Variants} className="text-sm text-muted-foreground mt-8">
-            Last updated: March 2026 · Written by Akash Yadav, Founder of <Link href="/about/akash-yadav" className="text-primary hover:underline">Vantalo</Link>
+            Last updated: March 2026 · Written by Akash Yadav, Founder of <Link href="/about/akash-yadav" className="text-primary-ink hover:underline">Vantalo</Link>
           </motion.p>
         </motion.div>
       </section>

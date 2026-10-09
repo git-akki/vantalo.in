@@ -127,12 +127,12 @@ const Contact = () => {
           {/* Contact Info - Left Column */}
           <div className="space-y-8">
             <motion.div variants={fadeInUp as unknown as unknown as Variants}>
-              <Badge variant="outline" className="w-fit py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary mb-6">
+              <Badge variant="outline" className="w-fit py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary-ink mb-6">
                 <MessageSquare className="w-3.5 h-3.5 mr-2" />
                 Get in Touch
               </Badge>
               <h2 className="text-4xl sm:text-5xl font-bold mb-6 tracking-tight">
-                Let's architect your <br/><span className="text-primary">growth engine.</span>
+                Let's architect your <br/><span className="text-primary-ink">growth engine.</span>
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed max-w-lg">
                 Whether you need a full system overhaul or a specific module implementation, we're ready to engineer your solution.
@@ -149,12 +149,12 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 group w-fit"
                   >
-                    <div className="w-10 h-10 rounded-full border border-border bg-background flex items-center justify-center text-muted-foreground group-hover:text-primary group-hover:border-primary transition-colors duration-300">
+                    <div className="w-10 h-10 rounded-full border border-border bg-background flex items-center justify-center text-muted-foreground group-hover:text-primary-ink group-hover:border-primary transition-colors duration-300">
                       <link.icon className="w-4 h-4" />
                     </div>
                     <div>
                       <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-0.5">{link.label}</p>
-                      <p className="font-medium text-foreground text-sm flex items-center gap-2 group-hover:text-primary transition-colors">
+                      <p className="font-medium text-foreground text-sm flex items-center gap-2 group-hover:text-primary-ink transition-colors">
                         {link.value}
                         <ArrowRight className="w-3 h-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
                       </p>

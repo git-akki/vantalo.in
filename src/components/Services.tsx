@@ -58,7 +58,7 @@ function ServiceCard({ service }: { service: typeof services[0] }) {
       {/* Content Section - Bottom Half */}
       <div className="p-8 flex flex-col flex-1 relative">
         <div className="flex justify-between items-start mb-6">
-           <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-500">
+           <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary-ink group-hover:scale-110 transition-transform duration-500">
               <service.icon className="w-6 h-6" />
            </div>
            
@@ -67,7 +67,7 @@ function ServiceCard({ service }: { service: typeof services[0] }) {
            </Link>
         </div>
 
-        <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
+        <h3 className="text-2xl font-bold mb-3 group-hover:text-primary-ink transition-colors duration-300">
           {service.title}
         </h3>
         
@@ -93,12 +93,12 @@ const Services = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="text-center mb-20 flex flex-col items-center"
         >
-          <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary rounded-full mb-6">
+          <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary-ink rounded-full mb-6">
              <Zap className="w-3.5 h-3.5 mr-2 fill-primary/20" />
              Capabilities
           </Badge>
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-            What We Help <span className="text-primary">You Build</span>
+            What We Help <span className="text-primary-ink">You Build</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             We don’t treat social media and websites as separate things. 
@@ -126,7 +126,7 @@ const Services = () => {
            variants={fadeInUp as unknown as unknown as Variants}
            className="mt-16 text-center"
         >
-           <Link href="/services" className="inline-flex items-center text-muted-foreground hover:text-primary transition-colors font-medium group">
+           <Link href="/services" className="inline-flex items-center text-muted-foreground hover:text-primary-ink transition-colors font-medium group">
               View Full System Breakdown <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
            </Link>
         </motion.div>

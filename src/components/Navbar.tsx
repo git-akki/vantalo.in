@@ -47,7 +47,7 @@ const Navbar = () => {
         <nav className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold tracking-tighter">
-            Vantalo<span className="text-primary">.in</span>
+            Vantalo<span className="text-primary-ink">.in</span>
           </Link>
 
           {/* Desktop Nav */}

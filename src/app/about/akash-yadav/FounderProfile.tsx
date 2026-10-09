@@ -139,7 +139,7 @@ export default function FounderProfile() {
                 variants={fadeInUp as unknown as unknown as Variants}
                 className="group bg-card border border-border/50 p-8 rounded-2xl hover:border-primary/50 hover:shadow-lg transition-all duration-300"
               >
-                <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-5 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary-ink mb-5 group-hover:scale-110 transition-transform duration-300">
                   <skill.icon className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-bold mb-2 tracking-tight">{skill.label}</h3>

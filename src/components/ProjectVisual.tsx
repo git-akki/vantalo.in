@@ -55,7 +55,7 @@ const SalonBookingVisual = () => {
                 {i === 1 && (
                   <div className="flex items-center gap-2">
                     <div className="w-4 h-4 rounded-full bg-primary/10 flex items-center justify-center">
-                      <User className="w-2.5 h-2.5 text-primary" />
+                      <User className="w-2.5 h-2.5 text-primary-ink" />
                     </div>
                     <div className="h-1.5 w-16 bg-primary/10 rounded-full" />
                   </div>
@@ -111,7 +111,7 @@ const OrderFulfillmentVisual = () => {
              {[ShoppingCart, Package, Truck, CheckCircle2].map((Icon, i) => (
                 <div key={i} className="flex flex-col items-center gap-2">
                    <div className="w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center shadow-sm relative group">
-                      <Icon className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                      <Icon className="w-4 h-4 text-muted-foreground group-hover:text-primary-ink transition-colors" />
                       
                       {/* Active State Ring */}
                       <motion.div
@@ -176,7 +176,7 @@ const TranslatorVisual = () => {
                 transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
                 className="absolute top-3 right-3"
              >
-                <Languages className="w-3 h-3 text-primary/40" />
+                <Languages className="w-3 h-3 text-primary-ink/40" />
              </motion.div>
           </div>
        </div>
@@ -274,12 +274,12 @@ const GrowthDashboardVisual = ({ project }: { project: typeof projects[0] }) => 
                  className="bg-card border border-border rounded-xl p-3 shadow-sm relative overflow-hidden group"
               >
                  <div className="flex items-center gap-2 mb-1 relative z-10">
-                    {stat.label.toLowerCase().includes("follower") ? <Users className="w-3 h-3 text-primary/70" /> : <TrendingUp className="w-3 h-3 text-primary" />}
+                    {stat.label.toLowerCase().includes("follower") ? <Users className="w-3 h-3 text-primary-ink/70" /> : <TrendingUp className="w-3 h-3 text-primary-ink" />}
                     <span className="text-[10px] text-muted-foreground uppercase tracking-wider font-semibold">{stat.label}</span>
                  </div>
                  <div className="flex items-end gap-2 relative z-10">
                     <span className="text-lg font-bold leading-none">{stat.value}</span>
-                    <span className="text-[10px] text-primary font-medium mb-0.5 bg-primary/10 px-1 rounded">{stat.trend}</span>
+                    <span className="text-[10px] text-primary-ink font-medium mb-0.5 bg-primary/10 px-1 rounded">{stat.trend}</span>
                  </div>
                  
                  {/* Subtle shimmer effect on hover/load */}
@@ -302,7 +302,7 @@ const GrowthDashboardVisual = ({ project }: { project: typeof projects[0] }) => 
         >
            <div className="flex justify-between items-center mb-4 relative z-10">
               <div className="flex items-center gap-2">
-                 <BarChart3 className="w-4 h-4 text-primary/70" />
+                 <BarChart3 className="w-4 h-4 text-primary-ink/70" />
                  <span className="text-xs font-medium">Growth Analytics</span>
               </div>
               <div className="flex gap-1">
@@ -325,7 +325,7 @@ const GrowthDashboardVisual = ({ project }: { project: typeof projects[0] }) => 
                     <motion.div 
                         animate={{ opacity: [0, 1, 0], y: [0, -5, 0] }}
                         transition={{ duration: 2, repeat: Infinity, delay: 2 + (i * 0.5), repeatDelay: 3 }}
-                        className="absolute -top-5 left-1/2 -translate-x-1/2 text-[9px] font-mono text-primary/70 opacity-0 whitespace-nowrap"
+                        className="absolute -top-5 left-1/2 -translate-x-1/2 text-[9px] font-mono text-primary-ink/70 opacity-0 whitespace-nowrap"
                      >
                         {formatValue(dataPoints[i])}
                      </motion.div>

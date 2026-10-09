@@ -19,7 +19,7 @@ export default function SocialMediaContent() {
           className="max-w-3xl"
         >
           <motion.div variants={fadeInUp as unknown as unknown as Variants}>
-            <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary rounded-full mb-6">
+            <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary-ink rounded-full mb-6">
               <Share2 className="w-3.5 h-3.5 mr-2" />
               Social Media Management
             </Badge>
@@ -113,7 +113,7 @@ export default function SocialMediaContent() {
                 variants={fadeInUp as unknown as unknown as Variants}
                 className="bg-card border border-border/50 p-8 rounded-2xl"
               >
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary-ink mb-6">
                   <item.icon className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">{item.title}</h3>
@@ -211,7 +211,7 @@ export default function SocialMediaContent() {
             className="grid lg:grid-cols-2 gap-12 items-center"
           >
             <motion.div variants={fadeInUp as unknown as unknown as Variants}>
-              <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary rounded-full mb-6">
+              <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary-ink rounded-full mb-6">
                 Case Study
               </Badge>
               <h2 className="text-3xl font-bold mb-4">5M+ Views in 3 Months</h2>
@@ -224,12 +224,12 @@ export default function SocialMediaContent() {
               <ul className="space-y-3">
                 {["Viral short-form content strategy", "Data-driven format optimization", "3-second hook methodology", "Retention graph analysis", "Algorithmic trend surfacing", "Community engagement automation"].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-foreground">
-                    <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-primary-ink shrink-0" />
                     {item}
                   </li>
                 ))}
               </ul>
-              <Link href="/work/timeline-by-harsh" className="inline-block mt-6 text-primary font-medium hover:underline">
+              <Link href="/work/timeline-by-harsh" className="inline-block mt-6 text-primary-ink font-medium hover:underline">
                 Read full case study →
               </Link>
             </motion.div>
@@ -274,7 +274,7 @@ export default function SocialMediaContent() {
               { step: "04", title: "Scale & Compound", desc: "As the system matures, we double down on winning formats, expand to additional platforms, and build compounding organic reach. The goal is to create a self-reinforcing growth engine where each piece of content amplifies the next." },
             ].map((item, i) => (
               <motion.div key={i} variants={fadeInUp as unknown as unknown as Variants} className="relative">
-                <div className="text-6xl font-bold text-primary/10 mb-2">{item.step}</div>
+                <div className="text-6xl font-bold text-primary-ink/10 mb-2">{item.step}</div>
                 <h3 className="text-lg font-bold mb-2">{item.title}</h3>
                 <p className="text-sm text-muted-foreground">{item.desc}</p>
               </motion.div>

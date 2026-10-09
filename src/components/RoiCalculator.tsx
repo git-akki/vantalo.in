@@ -63,7 +63,7 @@ const RoiCalculator = () => {
                             <div className="space-y-4">
                                 <div className="flex justify-between items-center">
                                     <label className="flex items-center gap-2 font-medium text-foreground">
-                                        <Users className="w-4 h-4 text-primary" /> Team Size
+                                        <Users className="w-4 h-4 text-primary-ink" /> Team Size
                                     </label>
                                     <span className="font-mono text-lg font-bold bg-secondary/50 px-4 py-1.5 rounded-lg border border-border/50">
                                         {teamSize[0]} <span className="text-muted-foreground text-sm font-normal">members</span>
@@ -83,7 +83,7 @@ const RoiCalculator = () => {
                             <div className="space-y-4">
                                 <div className="flex justify-between items-center">
                                     <label className="flex items-center gap-2 font-medium text-foreground">
-                                        <Clock className="w-4 h-4 text-primary" /> Hours / Week
+                                        <Clock className="w-4 h-4 text-primary-ink" /> Hours / Week
                                     </label>
                                     <span className="font-mono text-lg font-bold bg-secondary/50 px-4 py-1.5 rounded-lg border border-border/50">
                                         {hoursPerWeek[0]} <span className="text-muted-foreground text-sm font-normal">hours</span>
@@ -104,7 +104,7 @@ const RoiCalculator = () => {
                             <div className="space-y-4">
                                 <div className="flex justify-between items-center">
                                     <label className="flex items-center gap-2 font-medium text-foreground">
-                                        <DollarSign className="w-4 h-4 text-primary" /> Hourly Cost
+                                        <DollarSign className="w-4 h-4 text-primary-ink" /> Hourly Cost
                                     </label>
                                     <span className="font-mono text-lg font-bold bg-secondary/50 px-4 py-1.5 rounded-lg border border-border/50">
                                         ${hourlyRate[0]} <span className="text-muted-foreground text-sm font-normal">/hr</span>
@@ -141,7 +141,7 @@ const RoiCalculator = () => {
                                             {formatCurrency(potentialSavings)}
                                         </span>
                                     </div>
-                                    <div className="flex items-center gap-2 text-primary text-sm font-medium">
+                                    <div className="flex items-center gap-2 text-primary-ink text-sm font-medium">
                                         <TrendingDown className="w-4 h-4" />
                                         80% Efficiency Gain
                                     </div>
@@ -168,7 +168,7 @@ const RoiCalculator = () => {
                                     <div className="space-y-3">
                                         <div className="flex justify-between text-sm">
                                             <span className="font-medium text-muted-foreground flex items-center gap-2">
-                                                <Zap className="w-4 h-4 text-primary" /> Vantalo System Cost
+                                                <Zap className="w-4 h-4 text-primary-ink" /> Vantalo System Cost
                                             </span>
                                             <span className="font-mono font-medium">{formatCurrency(projectedCost)}/yr</span>
                                         </div>

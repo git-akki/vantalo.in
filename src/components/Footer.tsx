@@ -32,7 +32,7 @@ const Footer = () => {
             WebkitTextStroke: "1px hsl(var(--primary))",
           }}
         >
-          Vantalo<span className="text-primary">.in</span>
+          Vantalo<span className="text-primary-ink">.in</span>
         </span>
       </div>
 
@@ -45,8 +45,8 @@ const Footer = () => {
           <div className="flex flex-row items-center justify-between gap-4 text-[10px] sm:text-xs text-muted-foreground/50 tracking-wide uppercase font-medium">
              <span>© {new Date().getFullYear()} Vantalo Agency</span>
              <div className="flex items-center gap-6">
-              <Link href="/terms" className="hover:text-primary transition-colors">Terms</Link>
-              <Link href="/privacy" className="hover:text-primary transition-colors">Privacy</Link>
+              <Link href="/terms" className="hover:text-primary-ink transition-colors">Terms</Link>
+              <Link href="/privacy" className="hover:text-primary-ink transition-colors">Privacy</Link>
             </div>
           </div>
         </div>

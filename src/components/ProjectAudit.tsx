@@ -89,12 +89,12 @@ const ProjectAudit = () => {
                     viewport={{ once: true }}
                     variants={fadeInUp as unknown as unknown as Variants}
                     className="text-center mb-12 space-y-4">
-                    <Badge variant="outline" className="mb-4 py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary">
+                    <Badge variant="outline" className="mb-4 py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary-ink">
                         <Activity className="w-3 h-3 mr-2" />
                         System Diagnostics
                     </Badge>
                     <h2 className="text-3xl sm:text-4xl font-bold">
-                        Pre-Flight <span className="text-primary">Check</span>
+                        Pre-Flight <span className="text-primary-ink">Check</span>
                     </h2>
                     <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
                         Configure your project parameters below to run a compatibility diagnostic.
@@ -259,7 +259,7 @@ const ProjectAudit = () => {
                                             stroke="currentColor"
                                             strokeWidth="12"
                                             strokeLinecap="round"
-                                            className={score >= 3 ? "text-primary" : "text-primary/50"}
+                                            className={score >= 3 ? "text-primary-ink" : "text-primary-ink/50"}
                                             strokeDasharray={circumference}
                                             initial={{ strokeDashoffset: circumference }}
                                             animate={{ strokeDashoffset }}
@@ -292,7 +292,7 @@ const ProjectAudit = () => {
                                             animate={{ opacity: 1, y: 0 }}
                                             className="space-y-2"
                                         >
-                                            <h4 className={`text-lg font-bold flex items-center justify-center gap-2 ${score >= 3 ? 'text-primary' : 'text-muted-foreground'}`}>
+                                            <h4 className={`text-lg font-bold flex items-center justify-center gap-2 ${score >= 3 ? 'text-primary-ink' : 'text-muted-foreground'}`}>
                                                 {score >= 3 ? (
                                                     <>
                                                         <ShieldCheck className="w-5 h-5" />

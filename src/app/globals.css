@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-  /* Light theme: warm ivory paper, near-black ink, deep brand green for
-     text and buttons. --brand is the vivid #00D688 for decoration only
-     (dots, bars, glows); it fails contrast as text on ivory. */
+  /* Light theme: warm ivory paper, near-black ink. --primary is the bright
+     brand green #00D688 for buttons, fills and accents, always with dark
+     text on top. Bright green fails contrast as text on ivory, so green
+     text uses --primary-ink (#008F56) via text-primary-ink. */
   :root {
     color-scheme: light;
 
@@ -18,8 +19,9 @@
     --popover: 0 0% 100%;
     --popover-foreground: 45 14% 7%;
 
-    --primary: 158 100% 25%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 158 100% 42%;
+    --primary-foreground: 45 14% 7%;
+    --primary-ink: 156 100% 28%;
 
     --brand: 158 100% 42%;
 
@@ -29,15 +31,15 @@
     --muted: 40 20% 92%;
     --muted-foreground: 40 6% 40%;
 
-    --accent: 158 100% 25%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 158 100% 42%;
+    --accent-foreground: 45 14% 7%;
 
     --destructive: 0 72% 45%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 40 18% 87%;
     --input: 40 18% 84%;
-    --ring: 158 100% 25%;
+    --ring: 156 100% 28%;
 
     --radius: 0.75rem;
   }
@@ -67,7 +69,7 @@
 
   input,
   textarea {
-    caret-color: hsl(var(--primary));
+    caret-color: hsl(var(--primary-ink));
   }
 
   :focus-visible {
@@ -111,7 +113,7 @@
   .glow {
     box-shadow:
       0 1px 2px hsl(45 14% 7% / 0.06),
-      0 12px 32px -12px hsl(158 100% 25% / 0.28);
+      0 12px 32px -12px hsl(158 100% 42% / 0.45);
   }
 
   .text-balance {

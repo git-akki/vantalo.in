@@ -29,14 +29,14 @@ const ToolCTA = () => {
               <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div className="flex items-start sm:items-center gap-4">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
-                    <Bot className="w-6 h-6 text-primary" />
+                    <Bot className="w-6 h-6 text-primary-ink" />
                   </div>
                   <div>
                     <div className="flex items-center gap-2 mb-1">
                       <h3 className="font-semibold text-foreground text-base sm:text-lg">
                         Free AI Website Audit
                       </h3>
-                      <span className="flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider">
+                      <span className="flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary/10 text-primary-ink text-[10px] font-bold uppercase tracking-wider">
                         <Sparkles className="w-2.5 h-2.5" />
                         New
                       </span>
@@ -47,7 +47,7 @@ const ToolCTA = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-2 text-sm font-medium text-primary shrink-0 group-hover:gap-3 transition-all">
+                <div className="flex items-center gap-2 text-sm font-medium text-primary-ink shrink-0 group-hover:gap-3 transition-all">
                   Try it free
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>

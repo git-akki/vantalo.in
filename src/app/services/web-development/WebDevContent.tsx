@@ -14,7 +14,7 @@ export default function WebDevContent() {
       <section className="container mb-24">
         <motion.div initial="hidden" animate="visible" variants={staggerContainer as unknown as unknown as Variants} className="max-w-3xl">
           <motion.div variants={fadeInUp as unknown as unknown as Variants}>
-            <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary rounded-full mb-6">
+            <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary-ink rounded-full mb-6">
               <Globe className="w-3.5 h-3.5 mr-2" />
               Web Development
             </Badge>
@@ -180,7 +180,7 @@ export default function WebDevContent() {
       <section className="bg-secondary/5 py-24 border-y border-border/50 mb-24">
         <div className="container">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={staggerContainer as unknown as unknown as Variants}>
-            <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary rounded-full mb-6">Case Study</Badge>
+            <Badge variant="outline" className="py-1.5 px-4 text-sm border-primary/20 bg-primary/5 text-primary-ink rounded-full mb-6">Case Study</Badge>
             <motion.h2 variants={fadeInUp as unknown as unknown as Variants} className="text-3xl font-bold mb-4">Hair Mastery: Custom LMS Platform</motion.h2>
             <motion.p variants={fadeInUp as unknown as unknown as Variants} className="text-lg text-muted-foreground leading-relaxed mb-4 max-w-2xl">
               We engineered a WordPress + LearnDash platform with a custom instructor economy, automated earnings tracking, role-based access, and Vimeo streaming for a hair education company. The platform needed to support multiple instructors, each with their own course catalog, revenue sharing, and student management.
@@ -191,11 +191,11 @@ export default function WebDevContent() {
             <motion.ul variants={staggerContainer as unknown as unknown as Variants} className="space-y-3 mb-6">
               {["Custom earnings calculation plugin", "Role-based instructor & student access", "Secure Vimeo streaming integration", "Elementor-driven frontend for rapid iteration", "Automated payout reporting system", "Multi-instructor course management"].map((item, i) => (
                 <motion.li key={i} variants={fadeInUp as unknown as unknown as Variants} className="flex items-center gap-3 text-foreground">
-                  <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />{item}
+                  <CheckCircle2 className="w-5 h-5 text-primary-ink shrink-0" />{item}
                 </motion.li>
               ))}
             </motion.ul>
-            <Link href="/work/hair-mastery" className="text-primary font-medium hover:underline">Read full case study →</Link>
+            <Link href="/work/hair-mastery" className="text-primary-ink font-medium hover:underline">Read full case study →</Link>
           </motion.div>
         </div>
       </section>
